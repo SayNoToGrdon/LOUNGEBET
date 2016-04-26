@@ -1,0 +1,87 @@
+fieldset{ position: relative;
+	.selectDropdown{font-size:12px;color:$titleC;z-index:20;-webkit-backface-visibility:hidden;backface-visibility:hidden;
+		dd{float:left;width:auto;background:$backgroundC none repeat scroll 0 0;left:0px;top:10px;width:auto;padding:0;opacity:0;visibility: hidden;box-shadow: 0 10px 10px rgba(0,0,0,.2); position:absolute;transform:translate(0,-5px);transition:$x1 all;z-index:0; @include fullBorder;
+			ul{color:#C5C0B0;list-style:none;min-height:32px;
+				li{padding:5px 10px; display:block;color:$textC;transition:$x1 all;cursor:pointer;border-bottom:1px solid #1B2235;
+					&:hover{background-color:$borderFooterC;color:$brightFontC;}
+					&.provider{background-color:#1B2235;
+						&:hover{background-color:#1B2235;color:$textC}
+					}
+					&.disabled{background-color:$backgroundC;color:$borderFooterC;cursor:default;
+						&:hover{background-color:$backgroundC;color:$borderFooterC}
+					}
+					&.providerList{padding-left:25px;}
+					&:last-child{border-bottom:none}
+				}
+			}
+			&.animate{opacity: 1;visibility: visible;z-index: 5;transform:translate(0,0);}
+			&:before,&:after{left:auto;right:8px;}
+			&:before{@extend .arrowBefore;border-bottom-color: $borderFooterC;border-width: 7px;right:7px;}
+			&:after{@extend .arrowAfter;border-bottom-color: $backgroundC;border-width: 5px;right: 9px;}
+		}
+		dt{
+			span{float:right;width:63.63636363636364%;height:32px;cursor:pointer; display:block; padding:7px 10px;line-height:150%;transition:$x2 all;@include fullBorder;position:relative;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;max-width:100%;
+				&:before{background:url(../img/icons/sprite.png) -52px -8px;width:9px;height:7px;content:" ";position:absolute;top:12px;right:10px;z-index:0}
+				&.value{display:none;}
+			}
+			&.active span{border-color:$textC;}
+		}
+		.searchFilter{position:absolute;z-index:-1;padding-left:8px;background-color:$backgroundC;}
+	}
+}
+.selectDropdown, .selectDropdown a:visited { color:$titleC; text-decoration:none; outline:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+.selectDropdown select{display:none;}
+// fieldset .selectDropdown dd.animate~dt span{border-color:$lightboxBackgroundC;}
+// .selectDropdown a:hover { color:#5d4617;}
+// .selectDropdown dt a:hover { color:#5d4617; border: 1px solid #d0c9af;}
+.myAccount, .helpCenter{
+	fieldset{ position: relative;
+		.selectDropdown{font-size:13px;color:$MA_titleC;z-index:20;-webkit-backface-visibility:hidden;backface-visibility:hidden;
+
+			dd{float:left;width:100%;background:$MA_backgroundWhiteC none repeat scroll 0 0;left:auto;right:0;top:48px;padding:0;opacity:0;visibility: hidden;box-shadow: 0 10px 10px rgba(0,0,0,.2); position:absolute;transform:translate(0,-5px);transition:$x1 all;z-index:0; @include fullBorderInputs;backface-visibility:hidden;
+				ul{color:$titleC;list-style:none;min-height:38px;border-color:$MA_textC;max-height:200px;overflow-y:auto;overflow-x:hidden;
+					li{padding:5px 10px; display:block;color:$MA_textC;transition:$x1 all;cursor:pointer;border-bottom: none;
+						&:hover{background-color:$MA_textC;color:$MA_headerLinkC;}
+						&.provider{background-color:#1B2235;
+							&:hover{background-color:#1B2235;color:$MA_textC}
+						}
+						&.disabled{background-color:$MA_lightBorderC;color:$MA_backgroundWhiteC;cursor:default;
+							&:hover{background-color:$MA_lightBorderC;color:$MA_backgroundWhiteC}
+						}
+						&.providerList{padding-left:25px;}
+						&:last-child{border-bottom:none}
+					}
+				}
+				&.animate{opacity: 1;visibility: visible;z-index: 5;transform:translate(0,0);border-color:$MA_textC;}
+				&:before,&:after{left:auto;right:8px;}
+				&:before{@extend .arrowBefore;border-bottom-color:$MA_textC;border-width: 7px;right:7px;}
+				&:after{@extend .arrowAfter;border-bottom-color: $MA_backgroundWhiteC;border-width: 5px;right: 9px;}
+			}
+			dt{width:100%;
+				span{width:100%;height:36px;@include fullBorderInputs;backface-visibility:hidden;
+					&:before{background:url(../img/icons/sprite.png) -52px -8px;width:10px;height:7px;content:" ";position:absolute;top:11px;right:9px;z-index:1}
+					&.value{display:none;}
+				}
+				&.active span{border-color:$MA_textC;}
+			}
+			.searchFilter{height:36px;position:absolute;z-index:-1;padding-left:8px;background-color:$MA_backgroundWhiteC;}
+		}
+	}
+	.selectDropdown, .selectDropdown a:visited { color:$MA_titleC; text-decoration:none; outline:none;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
+	.selectDropdown select{display:none;}
+}
+/* can be changed ask designer */
+.helpCenter {
+	fieldset {
+		.selectDropdown {
+			dd{top:42px;
+				&.animate {border-color: $MA_scrollTrackC;}
+				&:before{border-bottom-color:$MA_scrollTrackC;}
+			}
+			dt{
+				span{height:32px}
+			}
+			.searchFilter{height:36px;}
+		}
+	}
+}

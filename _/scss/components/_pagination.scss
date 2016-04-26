@@ -1,0 +1,30 @@
+.myAccount{
+	.pagination{ text-align: center;width:100%;float: left;padding:15px 0 5px;
+	    ul { list-style: none;margin: 0;padding: 0;text-align: center;float:right}
+			li.pagesList{ display: inline;width: 36px;line-height: 36px;display: inline-block;text-decoration: none;color:$MA_textC;background-color: $MA_backgroundWhiteC;border: solid 1px $MA_borderGrayC;font-size: 14px;margin: 0 4px;
+				&.active{ border-color: $MA_blueC;}
+				&:hover{ border-color: $MA_blueC;}
+				&.active { background-color: $MA_blueC;
+					a{color: $MA_backgroundWhiteC;}
+				}
+				&.more { border: none;background: transparent;margin-left: 0;margin-right: 0;position:relative;
+					&:after{ content:". . .";position:absolute;display: block;bottom: -23px;left: 9px;}
+		        }
+		        &.searchPage{
+		        	input{ width: 100%;height: 100%;;border: 0;font-size: 14px;padding: 0 5px;text-align: center;margin-top: -4px;color:$MA_textC;}
+		        }
+			}
+	    a { display:block;width:100%;height:100%;color:$MA_textC; transition: none;
+			&.first{ background:url(../img/icons/sprite.png) 265px -427px;
+				&:hover{ background:url(../img/icons/sprite.png) 219px -427px;}
+			}
+	        &.last{ margin-right: 0; background:url(../img/icons/sprite.png) 292px -427px;
+				&:hover{ background:url(../img/icons/sprite.png) 244px -427px;}
+			}
+	        &:hover, &:focus { border-color: $MA_blueC;color:$MA_blueC;}
+	    }
+	    legend{ float:left;line-height: 38px;font-size: 13px;}
+	    .showLines{ float: left;width: 8.771812%;text-align: left;margin-left: 10px;}
+	    dd ul{ float:none;text-align: left;}
+	}
+}

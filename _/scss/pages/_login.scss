@@ -1,0 +1,88 @@
+.lightboxContent.loginLightbox{
+	.content{
+		form.login{ color:$textC ;
+			p{text-align: right;font-size: 11px;line-height: 180%;}
+			.row{ 
+				.capslock{background:url(../img/icons/sprite.png) no-repeat 325px -505px; transition: $x1 all;
+					&.on{background-position: 327px -476px;}
+				} 
+				.half{width: 48.4%;box-sizing:border-box;}	
+				.datePicker .oneThird{margin: 0 2% 0 0;}				
+				.datePicker .year.oneThird{margin-right:0;width:32%;max-width: 32%;}
+				.oneThird{width:32%;max-width: 32%;}
+				.twoThird{width:66%;max-width: 66%;}
+				fieldset{
+					dl{
+						.selectDropdown{
+							dd{ 
+								ul	{max-height:130px;}
+							}
+						}
+					}
+				}
+				&.mobilePicker{margin-bottom: 25px;}
+				&.captcha{margin:0 auto 20px;padding:0px 56px;width:76%;float:left;width: 100%;
+					.captchaImg{height: 35px;width: 40%;overflow:hidden;
+						img{width: 100%;}
+					}
+					.reload{ text-align: center; color:$iconC;width: 25%;font-size: 10px;
+						.reloadIcon{width: 25px;height: 20px;margin: 0 auto;display:block;background:url(../img/icons/sprite.png) no-repeat -72px -476px;padding-top: 20px;cursor:pointer;}
+					}    
+					.captchaInput{width: 35%;
+						input{height: 35px;}
+					}
+					.messageBox{right:-50px;min-height:35px;line-height:175%;width:115px;
+						&.animate{right:-68px;}	
+						&:before{top:8px;}
+						&:after{top:7px;}
+					}
+				}
+				&.checkboxes{
+					.relative{float:left;width:100%;
+						label.checkbox{width:auto;
+							span{line-height:170%;padding-left:1px;width:auto;}
+						}
+					}
+				} 
+			}
+			&.newData{
+				.relative{position: relative;
+					&.success{
+						span.sign{display:block;}
+						input, fieldset dt span{border-color:$btnC;}
+					}
+				}
+			}
+		}
+		.row{
+			&.buttons{padding: 0 56px;float:left;width: 100%;margin: 10px 0 15px;
+				a.btn{margin-bottom: 14px;width: 100%;display: block;
+					&.mainC{}
+					&.secC{
+						// &:hover{background:rgba(104,193,232,0.2);color:#161A29;border-color:#161A29}
+						&:hover{background-color: transparent;border-color: #68c1e8}
+					}
+					&:hover{}
+				}
+				&.specmargin{margin-top: 13px;margin-bottom:5px;}
+				span.redirecting{width: 100%;float:left;text-align:center;clear:both;color:$activeFontC;padding: 11px 0 5px;line-height: 100%;font-size: 12px;
+					a{color:$brightFontC; text-decoration: none;border-bottom:1px solid transparent; transition:$x1 all;
+						&:hover{color:$logoC;}
+					}
+				}
+			}
+		}
+		.note+form{padding-top: 0;padding-bottom: 0;
+			.row{
+				&.buttons{margin: 10px 0 15px;}
+			}
+		}
+		.relative{position: relative;
+			&.success{
+				span.sign{display:none;}
+				input, fieldset dt span{border-color:inherit}
+			}
+		}
+	}
+	
+}

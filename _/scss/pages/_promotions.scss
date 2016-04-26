@@ -1,0 +1,69 @@
+.promotionsPage{
+	.wrapper{margin-top:20px;}
+	.sorting{width:100%;position:relative;float:left;
+		ol{float:right;
+			li{font-size:14px;color:$titleC;margin-top:0;float:left;line-height:100%;height:100%;padding:20px 10px;cursor:pointer;transition:$x1 all;text-transform: capitalize;padding-bottom: 15px;
+				&:hover{color:$goldishC;}
+				&.active, &#active{color:$goldishC;}
+				&:last-child{padding-right:0px;}
+			}
+		}
+
+	}
+	.titleDivider{width:100%;float: left;clear:both;height:40px;padding-top:10px;
+		i.line.right{width:93.732824%;border-bottom: solid 1px #cfbe62;float: right;}
+		h3{float: left;font-size:14px;color:$goldishC;width:6.21374%;text-align: left;line-height: 20%;font-weight:500;text-transform: capitalize;}
+	}
+	.thumbs{width:100%;float:left;margin-bottom: 15px;
+		.thumbsFilter{width: 101.44%;
+			.list{opacity:0;
+				li{border: none;float: left;width:32.3551542513%;margin-right:0.7524454477%;position: relative;margin-bottom: 0.7524454477%;overflow:hidden;cursor: default;
+					.bottom{height:44px;width: 100%;position: absolute;bottom:0;left:0;z-index: 5;background-color:rgba(71,76,93,.6);
+						p{color:#ffffff;font-size:16px;line-height: 44px;margin-left: 15px;text-transform:capitalize;}
+					}
+					figure{height: 100%;overflow: hidden;float: left;width: 100%;}
+					img{margin:0 auto;width: 100%;position: relative;z-index: 0;}
+					.hover{background-color:rgba(0,0,0,.7);width:100%;height:100%;position:absolute;left:0;top:0;z-index:2;opacity: 0;box-sizing: inherit;padding:14px;transition:$x1 all;
+						.btn.readmore{position:absolute;right:15px;bottom:60px;transform:scale(0.95);}
+						p{color:#ffffff;text-align: justify;max-height: 126px;max-height: 126px;overflow: hidden;}
+					}
+					&:hover{
+						.hover{opacity: 1;}
+						.btn.readmore{transform:scale(1);opacity:1;}
+						.bottom{background-color:rgba(0,0,0,.2);}
+					}
+					.terms_hidden, .img_hidden{display: none;}
+					.badge{height:27px;padding:0 15px;position:absolute; left:0;top:15px;font-size:14px;color:#fff;text-align:center;line-height:26px;box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.35);text-transform:capitalize;}
+					.badge.casino{background:#8A0E7D;}
+					.badge.sports{background:#0D8443;}
+					.badge.live-casino{background:#400E8A;}
+				}
+			}
+		}
+	}
+}
+
+@media #{$maxMiniDesktop} {
+	.promotionsPage {
+		.titleDivider {
+			i.line.right{width: 86.732824%}
+			h3{width: 13.21374%;}
+		}
+	}
+	.promotionsPage .thumbs .thumbsFilter{
+		.list li{
+			.hover {
+				p{max-height:76px;}
+			}
+		}
+	}
+}
+
+@media #{$desktop} {
+	.promotionsPage {
+		.titleDivider {
+			i.line.right{width: 87.732824%}
+			h3{width: 12.21374%}
+		}
+	}
+}

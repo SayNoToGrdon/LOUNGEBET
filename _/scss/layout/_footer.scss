@@ -1,0 +1,157 @@
+footer {width:100%;
+	.container{}
+	.links{width:100%;padding-bottom:20px;float: left;border-top:$borderFooterC 1px solid;padding-top:35px;display:block;text-align: center;
+		li{display:inline-block;margin:0 10px;
+			&:first-child + li{display: none;}
+		}
+		p{float: left;width:100%;line-height:100%;margin-bottom:15px;font-size:14px;
+			a{color:$iconC;border-bottom:1px solid transparent;padding-bottom:2px;font-weight:500;transition:$x1 all;
+				&:hover{border-color:#C5C9D2;padding-bottom:3px;color:$brightFontC}
+			}
+		}
+		.title{font-size:14px;color:$titleC;text-transform:uppercase;padding-bottom:10px;font-weight:500;cursor: default;}
+	}
+	.divider{width:100%;height:1px;background-color:$borderFooterC;float: left;margin-bottom:10px;margin-top:10px;}
+	.payMethods, .partners{float:left;width:75%;position: relative;
+		.title{font-size:12px;text-transform:uppercase;line-height:100%;color:$titleC}
+		.arrow{background-image:url(../img/icons/sprite.png);background-position:-66px 0;width:29px;height:34px;cursor: pointer;position: absolute;right:-8px;top:47px;transition:$x2 all;
+			&:hover{right:-12px;}
+		}
+		ul,.slider{float: left;
+			li{float: left;margin-right:40px;margin-top:10px;}
+		}
+	}
+	.slick-initialized{width: 98%;margin: 0;height: 59px;overflow: hidden;}
+	.slick-list{width: 100%;}
+	.payMethods .slider li i{float: left;position: relative;height: 44px;
+		&:after{content:"";background-image:url(../img/payment-methods/all.png);background-repeat:no-repeat;height:44px;position: absolute;top: 0;left: 0;z-index: 0;opacity:1;transition:$x1 all;}
+		&:before{content:"";background-image:url(../img/payment-methods/all.png);background-repeat:no-repeat;height:44px;position: absolute;top: 0;left: 0;z-index: 1;transition:$x1 all;opacity: 0}
+		&:hover:before{opacity: 1}
+		&:hover:after{opacity:0}
+		&.visa{width:57px;
+			&:after{width:57px;background-position:0 0;}
+			&:before{background-position:0 -50px;width:57px;}
+			&:hover:after{width:57px;}
+			&:hover:before{}
+		}
+		&.masterCard{width:62px;
+			&:after{width:62px;background-position:-111px 0;}
+			&:before{background-position:-111px -50px;width:62px;}
+			&:hover:after{width:62px;}
+			&:hover:before{}
+		}
+		&.skrill{width:57px;
+			&:after{width:57px;background-position:-230px 0;}
+			&:before{background-position:-230px -50px;width:57px;}
+			&:hover:after{width:57px;}
+			&:hover:before{}
+		}
+		&.neteller{width:94px;
+			&:after{width:94px;background-position:-342px 0;}
+			&:before{background-position:-342px -50px;width:94px;}
+			&:hover:after{width:94px;}
+			&:hover:before{}
+		}
+		&.qiwi{width:91px;
+			&:after{width:91px;background-position:-481px 5px;}
+			&:before{background-position:-481px -45px;width:91px;}
+			&:hover:after{width:91px;}
+			&:hover:before{}
+		}
+		&.webMoney{width:101px;
+			&:after{width:101px;background-position:-617px 0;}
+			&:before{background-position:-617px -50px;width:101px;}
+			&:hover:after{width:101px;}
+			&:hover:before{}
+		}
+		&.ecoPays{width:84px;
+			&:after{width:84px;background-position:-758px 0;}
+			&:before{background-position:-758px -50px;width:84px;}
+			&:hover:after{width:84px;}
+			&:hover:before{}
+		}
+		&.paySafeCard{width:113px;
+			&:after{width:113px;background-position:-899px 3px;}
+			&:before{background-position:-899px -47px;width:113px;}
+			&:hover:after{width:113px;}
+			&:hover:before{}
+		}
+	}
+	.partners{width:20%;margin-left:5%;
+		ul{width: 100%;}
+		ul li{margin-top:3px;float: left;margin-right:0;
+			i{float: left;position: relative;height: 44px;		
+				&:after{content:"";height:44px;position: absolute;top: 0;left: 0;z-index: 0;opacity:1;transition:$x1 all;}
+				&:before{content:"";height:44px;position: absolute;top: 0;left: 0;z-index: 1;transition:$x1 all;opacity: 0}
+				&:hover:before{opacity: 1}
+				&:hover:after{opacity:0}
+				&.betSoft{width:93px;
+					&:after{width:93px;background-image:url(../img/partners/betsoft.png);background-repeat:no-repeat;background-position:0 3px;}
+					&:before{background-image:url(../img/partners/betsoft.png);background-position:0 -43px;width:93px;}
+					&:hover:after{width:93px;}
+					&:hover:before{}
+				}			
+				&.netEnt{width:79px;
+					&:after{width:79px;background-image:url(../img/partners/netent.png);background-repeat:no-repeat;}
+					&:before{background-image:url(../img/partners/netent.png);background-position:0 -44px;width:79px;}
+					&:hover:after{width:79px;}
+					&:hover:before{}
+				}			
+				&.microgaming{width:129px;
+					&:after{width:129px;background-image:url(../img/partners/microgaming.png);background-repeat:no-repeat;background-position: 0 5px}
+					&:before{background-image:url(../img/partners/microgaming.png);background-position:0 -42px;width:129px;}
+					&:hover:after{width:129px;}
+					&:hover:before{}
+				}	
+			}
+			&:last-child{float: right;}	
+		}
+	}
+	.secRow{float: left;width:100%;color:$title2ndC;margin:0 0 10px 0;
+		.left{float: left;width:75%;}
+		small{font-size: 11px;width:70%;float: left;
+			span{color:$titleC;display:block;}
+			em{font-style:normal;color:$titleC}
+		}
+		.ratedR{border-radius:50%;font-size:18px;font-style:normal;border:1px solid $title2ndC;width:48px;height:48px;float: left;cursor:default;line-height: 44px;text-indent:6px;margin:3px 0 0 0}
+		.social{float: right;width:25%;
+			a{border-radius: 50%;color:$iconC;font-size:18px;border: 1px $iconC solid;width: 37px;height:37px;background-color:$backgroundC;margin:10px 0 0 5.7%;transition:$x1 all;-webkit-backface-visibility:hidden;float: right;
+				&:before{position: relative;text-align: center;display: block;vertical-align: middle;top:9px;}
+				&:last-child{margin-left:0}
+				&.socicon-twitter{color:#55ACEE;border-color:#55ACEE;
+					&:hover{box-shadow:0 0 5px #55ACEE;}
+				}
+				&.socicon-facebook{color:#3A589E;border-color:#3A589E;
+					&:hover{box-shadow:0 0 5px #3A589E;}
+				}
+				&.socicon-google{color:#D6492F;border-color:#D6492F;
+					&:hover{box-shadow:0 0 5px #D6492F;}
+				}
+				&.socicon-youtube{color:#DF192A;border-color:#DF192A;
+					&:hover{box-shadow:0 0 5px #DF192A;}
+				}
+				&.socicon-linkedin{color:#007BB6;border-color:#007BB6;
+					&:hover{box-shadow:0 0 5px #007BB6;}
+				}
+				&:last-child{margin-right:0}
+			}
+		}
+	}
+	.license{float: left;width: 100%;text-align: center;margin: 0 0 50px 0;
+		.title{font-size:14px;padding-bottom:10px;padding-top:10px}
+		p{color:$titleC;}
+	}
+	.goToTop{display: none;z-index: 99;background:$goUpC;opacity:.8;width: 50px;height:50px;position:fixed;right:30px;bottom:30px;cursor: pointer;background-image:url(../img/icons/sprite.png);background-repeat:no-repeat;background-position:-104px 12px;
+		&:hover{opacity:1;}
+	}
+}
+
+
+@media #{$maxMiniDesktop} {
+    footer .secRow .social a{margin: 10px 0 0 4.3%;}
+    footer .secRow small{width:82%;}
+    // footer .links li{width:19%}
+    footer .payMethods{width: 71%;}
+    footer .partners{width:24%;}
+
+}

@@ -1,0 +1,103 @@
+.lightboxContent.register{
+	.content{
+		.banner{float:left;width:280px;position: relative;
+			.imageHolder{overflow:hidden;height:570px;position: relative;
+				img{width: 100%;margin-top: -90px;}
+				&:before{content:"";background: url(../img/filters/bonus_filter_bottom.png);width:100%;height:240px;position:absolute;bottom: 0;z-index: 10;}
+				&:after{content:"";background: url(../img/filters/bonus_filter_top.png);width:100%;height:240px;position:absolute;top:0;z-index: 10;}
+			}
+			a{width:100%;position:absolute;bottom:10px;color:$goldishDarkC;text-align:center;font-weight:500;z-index:11;font-size: 14px;
+				&:hover{color:$goldishC;}
+			}
+		}
+		h3{padding-top: 0;padding-bottom: 15px;}
+		.half{width: 48.7%;box-sizing:border-box;
+			.selectDropdown dt span{
+				max-width: 180px;
+			}
+		}	
+		.oneThird{width:32.3%;
+			.selectDropdown dt span{
+				max-width: 120px;
+			}
+		}				
+		.twoThird{width:65.1%;}	
+		form{padding-bottom: 10px;
+			.row{
+				.bonus.relative input[type="text"]{padding-right: 25px;}				
+				&.buttons{text-align: center;width: 100%;float:left;padding: 0 56px;margin-top:10px;
+					a.btn{
+						&.secC{display:inline-block;padding:0 7px;color:$brightFontC;text-transform:uppercase;width: auto;
+							&:hover{color:$logoC;}
+						}
+						&.closeLightbox{width: 100%;}
+						span.redirecting{color:$activeFontC;display:inline-block;float:none;line-height:210%;width: auto;}
+					}
+					.secC{display:inline-block;padding:0 7px;color:$brightFontC;
+						&:hover{color:$logoC;}
+					}
+				}
+				&.checkboxes{ 
+					.relative{float:left;width:100%;
+						&.error{
+							label.checkbox{
+								&:before{border-color:$errorC;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//STYLE FOR FULL REGISTRATION
+	&.full{
+		.banner{width:215px;
+			.imageHolder{height:490px;
+				img{width: 100%;margin-top:-40px;}
+			}
+		}
+		.content{
+			form{width:660px;
+				.half{width: 49.3%;
+					.row{
+						.selectDropdown dt span{
+							max-width: none;
+						}
+
+					}
+				}
+				.row{
+					label.radio.oneThird{width: 34%;}
+					
+					&.buttons{
+						margin: 15px 0 0;
+						padding: 0 25%;
+					}
+					&.datePicker{ 
+						fieldset{width:31.7%;max-width:31.7%;margin:0 2.4%;
+							&.year{margin:0;float:right;
+							}
+							&:first-child{margin:0;}					
+							&.error{border-color: $errorC;}
+							// option{font-size: 12px;}
+						}					
+						&.error{
+							fieldset{ border-color: $errorC;}
+						}
+						&.success{
+							fieldset{border-color:$btnC;}
+						}			
+					}
+					&.checkboxes{
+						label{margin-bottom: 10px; margin-top: 0;
+							span{width: 94%;}
+						}
+						.messageBox{top:-3px;
+							&.left.animate{left:-163px;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}

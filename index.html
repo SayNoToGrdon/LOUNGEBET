@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Important stuff for SEO -->
+	<title></title>
+	<meta name="description" content="DESCRIPTION" />
+	<meta name="Copyright" content="" />
+	<!-- Touch Meta Tags -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, maximum-scale=1.0">
+	<meta name="theme-color" content="#121623">
+	<!-- FavIcon -->
+	<link rel="shortcut icon" href="_/img/favicon.ico" />
+	<!-- CSS and Fonts-->
+	<link rel="stylesheet" href="_/css/style.css" />
+	<!-- <link rel="stylesheet" href="_/css/slideme.css" /> -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css' data-noprefix>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css' data-noprefix>
+	<!-- All JavaScript at the bottom, except this Modernizr build & CSS Browser Selector User Agent. -->
+</head>
+<body ng-app="Vbet" ng-controller="Ctrl">
+    <div ng-include="'includes/header.html'"></div>
+    <div ui-view></div>
+    <footer ng-include="'includes/footer.html'"></footer>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+
+    <script src="_/scripts/angular/app.js"></script>
+    <script src="_/scripts/angular/Controller.js"></script>
+    <script src="_/scripts/angular/routes.js"></script>
+</body>
+</html>

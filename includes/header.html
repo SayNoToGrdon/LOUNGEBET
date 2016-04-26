@@ -1,0 +1,153 @@
+<div class="overlay"></div>
+<div class="headerBG"></div>
+<header>
+    <div class="container">
+        <div class="wrap">
+            <a href="#" ui-sref="home"><h1 class="logo">VictoryRoom</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="#" ui-sref="home" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_main_menu_3)" ng-class="{active: $state.includes('home')}"></a></li>
+                    <li><a href="#" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_main_menu_4)"></a></li>
+                    <li><a href="#">VIP</a></li>
+                    <li><a href="#" ui-sref="promotions" ng-class="{active: $state.includes('promotions') || $state.includes('promotions-view')}" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_main_menu_5)"></a></li>
+                </ul>
+            </nav>
+            <div class="acc">
+                <!-- Language -->
+                <div class="lang">
+                    <a href="#" class="title" ng-change="switchLanguage(language)" ng-model="language"><i class="flag-icon flag-icon-gb"></i></a>
+                <!--     <a href="#" class="title" ng-change="switchLanguage(language)" ng-model="language"><i class="flag-icon flag-icon-{{ countryCode }}"></i></a> -->
+
+              <!--      <select chosen>
+                       <option></option>
+                   </select> <option></option>-->                       
+
+
+                    <div class="dropdown">
+                        <a href="#"><i class="flag-icon flag-icon-ru"></i> Russian</a>
+                        <a href="#"><i class="flag-icon flag-icon-am"></i> Armenian</a>
+                        <a href="#"><i class="flag-icon flag-icon-ge"></i> Georgian</a>
+                        <a href="#"><i class="flag-icon flag-icon-gr"></i> Greek</a>
+                        <a href="#"><i class="flag-icon flag-icon-fr"></i> French</a>
+                        <a href="#"><i class="flag-icon flag-icon-es"></i> Spanish</a>
+                    </div>
+                </div>
+
+                <!-- Help -->
+
+                <div class="help">
+                    <span class="title">Help</span>
+
+                    <div class="dropdown">
+                        <a href="#" class="support">Support</a>
+                        <a href="#" class="liveChatLink">Live Chat</a>
+                    </div>
+                </div>
+
+                <!-- Logged In - Account -->
+                <div ng-show="isLoggedIn" class="loggedInDetails">
+                    <div class="balance">
+                        <span class="title"><i> {{ totalMoney | currency : $ : 0 }} </i><i>Show Balance</i></span>
+                        <em class="hover"><!-- on hover --></em>
+
+                        <div class="dropdown">
+                            <div class="row top">
+                                <!-- <span class="toggle">Hide Balance</span> -->
+                                <span class="deposit"><a href="#">Deposit</a></span>
+                            </div>
+                            <div class="row total">
+                                <p>Total Balance <i> {{ totalMoney | currency : $ : 0 }} </i></p>
+                            </div>
+                            <div class="row">
+                                <p>Withdrawable Balance <i> {{ cashMoney | currency : $ : 0 }} </i></p>
+                            </div>
+                            <div class="row totalBonus">
+                                <p>Total Bonus Balance <i> {{ casinoMoney | currency : $ : 0 }} </i></p>
+                            </div>
+                            <div class="row withProgress">
+                                <p>Free Bets <i>$290</i></p>
+
+                                <div class="progress">
+                                    <span style="width:40%"></span>
+                                </div>
+                                <p class="withDot"><i>$70</i> <i>$220</i></p>
+                            </div>
+                            <div class="row withProgress">
+                                <p>Casino Bonus <i>$170</i></p>
+
+                                <div class="progress">
+                                    <span style="width:70%"></span>
+                                </div>
+                                <p class="withDot"><i>$120</i> <i>$150</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <span class="title">{{userName}}</span>
+
+                        <div class="dropdown">
+                            <div class="row top">
+                                <p class="title">Current Level: 3</p>
+
+                                <p>Accumulated Points: <b>3650</b></p>
+
+                                <div class="progress">
+                                    <span style="width:40%"></span>
+                                </div>
+                                <div class="bottom">
+                                    <p>Next Level: <b>4</b></p>
+
+                                    <p>Required Points: <b>350</b> <a href="">more info</a></p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#" ui-sref="balance_management" ng-click="loadProfile()">Balance
+                                    Management</a></li>
+                                <li><a href="#" ui-sref="my_profile">My
+                                    Profile</a></li>
+                                <li><a href="#" ui-sref="account_history">History</a></li>
+                                <li>
+                                    <a href="#" ui-sref="account_promotions">Promotions</a>
+                                </li>
+                                <!--<li><a href="#">VIP System</a></li>-->
+                                <li><a href="#" ui-sref="messages.inbox">Messages</a></li>
+                                <li><a href="#" ng-click="logout()" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_player_logout_btn)"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <span class="title">
+                            <i class="notification">10</i>
+                        </span>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html" class="unread">Re: How to
+                                    win <i>Today</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html" class="unread">Re: How to
+                                    deposit <i>Yersterday</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html">First Deposit Bonus <i>3
+                                    days ago</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html">Welcome Bonus <i>50 days
+                                    ago</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html">Welcome <i>78 days
+                                    ago</i></a></li>
+                            </ul>
+                            <a href="../../my_account/6_messages/6_Messages_Inbox.html" class="viewAll">&mdash; View
+                                All &mdash;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <i class="notification">10</i> -->
+
+                <!-- Login/Register -->
+                <span ng-show="!isLoggedIn">
+                    <a href="#" fancybox ng-click="openFancybox('views/registration/full-registration-lightbox.html', $event)"
+                       class="btn mainC lightbox" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_register_btn)"></a>
+                    <a href="#" fancybox ng-click="openFancybox('views/login/login-lightbox.html', $event)"
+                       class="btn secC lightbox" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_login_btn)"></a>
+                </span>
+            </div>
+        </div>
+    </div><!-- container -->
+
+</header>

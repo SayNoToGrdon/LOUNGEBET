@@ -1,0 +1,24 @@
+.myAccount{
+	form{
+		input[type=radio],input[type=checkbox]{display: none;}
+		input[type=radio]{
+			&:disabled + label{
+				&:before, &:after{opacity: .6}
+			}
+			&:checked+label:after{
+				content:"";border:3px solid $MA_borderGrayC;border-radius:50%;position:absolute;top:5px;left:4px;border-bottom-width:2px;border-right-width: 2px;
+			}
+		}
+		input[type=checkbox]{
+			&:checked+label:after{
+				content:"";border:none;transform:none;width:20px;height:15px;position:absolute;top:0px;left:0px;background:url(../../_/img/my_account/sprite.png) no-repeat -245px -390px;
+			}
+			&:checked+label:before{
+				visibility: hidden;
+			}
+		}
+		label.checkbox, label.radio{position:relative;float:left;margin:7px 15px;cursor:pointer;}
+		label.radio:before{content:"";display:block;float:left;border-radius:50%;width:13px;height:13px;margin:1px 7px 0 0;background:none;border: 1px solid $MA_borderGrayC;}
+		label.checkbox:before{content:"";border:none;display:block;float:left;width:20px;height:15px;background:url(../../_/img/my_account/sprite.png) no-repeat -245px -420px;}
+	}
+}

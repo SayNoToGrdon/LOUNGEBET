@@ -1,0 +1,20 @@
+.myAccount,.helpCenter{
+	.wrapper{padding: 20px;width: 100%;float: left;background: $MA_backgroundLightC;}
+	.menuTabs{width: 100%;float:left;
+		nav{color:white;font-size:14px;text-transform:capitalize;
+			ul{
+				li{ display: table-cell;width:1%;border-right: solid 1px $MA_backgroundLightC;border-bottom: solid 1px $MA_menuTabsBorderC;
+					a{ position: relative;display:inline-block;width:100%;padding:15px 0;text-align:center;line-height:100%;position:relative; font-size: 18px;color: $MA_textC;background: $MA_backgroundGrayC;
+						&:hover{ color:$MA_blueC;}
+					}
+					a.active{ color:$MA_blueC;font-weight:500;background:$MA_backgroundLightC;
+						&:before{border-bottom:1px solid $MA_backgroundLightC;content:"";position:absolute;bottom:-1px;width:100%;left:0;}
+					}
+					&:last-child{position: relative;border-right: 0;
+						.notifyNew{position: absolute; border-radius: 50%; background: $MA_blueC; font-size: 10px; top:5px;color: $MA_backgroundWhiteC;min-width: 19px;height: 19px;text-align: center;line-height: 19px;}
+					}
+				}
+			}
+		}
+	}
+}

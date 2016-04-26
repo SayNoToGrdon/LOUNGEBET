@@ -1,0 +1,298 @@
+
+// C stands for Color
+// B stands for Border
+// BR stands for Border Radius
+// CO stands for Color Opaticy
+
+//************************//
+//        Colors          //
+//************************//
+
+// #F78429 Orange
+// #57B667 Original green
+// #3A8B55 Green
+// #54BA4C Green bright
+// #2FB43D Green bright 2
+
+$backgroundC : #0e1629;
+$background40CO : rgba(14,22,41,.4);
+$background60CO : rgba(14,22,41,.6);
+$background80CO : rgba(14,22,41,.8);
+$background95CO : rgba(14,22,41,.95);
+$subtleC : #2B2F3F;
+$logoC : #71c7ea;
+$btnC : #0d8443;
+$btnHoverC : #10a24f;
+$btn2C : #68C1E8;
+$btn2HoverC : #68b7d9;
+$btn3C : #365263;
+$btn3HoverC : #426579;
+$headerC : #121623;
+$headerCO : rgba(18,22,35,1);
+$textC : #6c7389;
+$brightFontC : #f1f1f1;
+$brightFont2C : #c6c6c6;
+$bright1C: #e4e4e4;
+$bright2C: #c0c0c0;
+$textLinkC : $btnC;
+$goldishC : #cfbe65;
+$goldishDarkC : #b2a356;
+$iconC : #7b8191;
+$titleC : #7b8191;
+$title2ndC : #484F5E;
+$title3rdC : #A9ADB7;
+$title4thC : #c2c5cd;
+$errorC : #b85656;
+$errorLightC : #c85e5e;
+$borderFooterC : #474c5d;
+$lightboxBackgroundC : #161a29;
+$goUpC : #191C28;
+//for input color, input:focus borderColor and links hover inlightbox
+$activeFontC: #919ab9;
+$lightActive: #1f2435;
+// Temporarily Level colors for profile dropdown
+$level1 : #2a3359;
+$level2 : #42508a;
+
+// My Account
+$MA_backgroundDark85CO : rgba(30,32,52,.85);
+$MA_backgroundDarkC : #24272a;
+$MA_backgroundDark2C : #111821;
+$MA_backgroundLightC : #f3f3f3;
+$MA_backgroundLight2C : #fbfbfb;
+$MA_backgroundWhiteC : #ffffff;
+$MA_progressC:#4f505f;
+$MA_progressFillC:#60a3e3;
+$MA_progressFillCO:rgba(96,163,227,.8);
+
+$MA_backgroundGrayC : #d3d3d3;
+$MA_linkC : #0082cd;
+$MA_link2C : #00b3e3;
+$MA_menuBackgroundC : #303135;
+$MA_titleC : #25262a;
+$MA_title2ndC : #adadad;
+$MA_headerLinkC : #dcd8d6;
+$MA_lightBorderC : #d4d4d4;
+$MA_borderSidebarDarkC : #1f2224;
+$MA_borderSidebarSubC : #3c4542;
+$MA_borderSidebarSubTextC : #9fadac;
+$MA_borderSidebarLightC : #2f3134;
+
+$MA_textC : #4d585a;
+$MA_blueC : #1796DD;
+$MA_greenC : #0d8444;
+$MA_warningC: #f6a704;
+
+$MA_messageNotificationC : #C85E5E;
+$MA_redBorderC : #e73c50;
+$MA_greenBorderC : #0d8443;
+$MA_tableHeaderC : #27708f;
+$MA_tableTitleBackgroundC : #fafbfb;
+$MA_notifyBackgroundC : #d6f7ff;
+$MA_notifyBorderC : #44c8e8;
+$MA_borderGrayC : #6e7c7c;
+$MA_backgroundPendingC : #fceadd;
+$MA_backgroundRejectedC : #ffd3d3;
+$MA_backgroundCanceledC : #dddddd;
+$MA_errorC : #e83c51;
+$MA_successC : #a2282e;
+$MA_warningLightC: #f5d34b;
+$MA_scrollTrackC : #D4D4D4;
+$MA_scrollThumbC : #c2c2c2;
+$MA_proccessC : #d18901;
+$MA_successMessageC : #acdb90;
+$MA_successMessageBorderC : #6bc048;
+$MA_inactiveC : #8f9d9d;
+$MA_editMessageC : #f5dc6a;
+$MA_endMessageC : #fa91a2;
+
+$MA_menuTabsBorderC : #C8C8C8;
+$MA_menuTabsTitleC : #1896dd;
+
+//Help Center
+$HC_messageNotificationC : #be3a49;
+$HC_backgroundLightC : #f4f4f4;
+$HC_buttonBlueC: #0082cb;
+$HC_buttonGreenHoverC: #0b733a;
+
+$TC_lightboxBorderC: #121626;
+$TC_headerTextC: #f2f2f2;
+$TC_titleTextC: #232323;
+//************************//
+//        Transition      //
+//************************//
+$x0: .125s;
+$x1: .25s;
+$x2: .50s;
+$x3: 1s;
+$x4: 1.5s;
+$x5: 2s;
+
+//************************//
+//       arrowAfter       //
+//************************//
+// For @extend CSS Arrow
+.arrowAfter,.arrowBefore{bottom: 100%;left: 50%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
+.arrowAfter{border-color: rgba(255, 255, 255, 0);border-bottom-color:$brightFontC;border-width: 5px;margin-left: -5px;}
+.arrowBefore{border-color: rgba(255, 255, 255, 0);border-bottom-color:$brightFontC;border-width: 6px;margin-left: -6px;}
+
+//************************//
+//        	Mixins	      //
+//************************//
+
+// Borders
+@mixin fullBorder() {
+	border: 1px solid $borderFooterC;
+}
+@mixin topBorder() {
+	border-top: 1px solid $borderFooterC;
+}
+@mixin bottomBorder() {
+	border-bottom: 1px solid $borderFooterC;
+}
+
+@mixin MA_fullBorder() {
+	border: 1px solid $MA_scrollTrackC;
+}
+@mixin MA_bottomBorder() {
+  border-bottom: 1px solid $MA_scrollTrackC;
+}
+@mixin MA_topBorder() {
+  border-top: 1px solid $MA_scrollTrackC;
+}
+// User select
+@mixin selectNone() {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+@mixin fullBorderInputs() {
+	border: 1px solid $MA_borderGrayC;
+}
+@mixin rightBorder() {
+	border-right: 1px solid $MA_lightBorderC;
+}
+
+//************************//
+//		Page Configs	  //
+//************************//
+
+body{background-color:$backgroundC}
+body.myAccount{background-image:url('../img/bg/bg-my_account.jpg');background-size:100%; background-repeat:no-repeat;}
+body.helpCenter{background-image:url('../img/bg/bg-help_center.png');background-size:100%; background-repeat:no-repeat;}
+select, input, textarea {color: #ECF0F6;outline: none;}
+b{font-weight: 600}
+a {color: $logoC;text-decoration: none;transition:$x1 all;}
+a:focus{outline: none;}
+a:hover {}
+ul,ol{list-style: none;}
+textarea,
+input[type=email],
+input[type=password],
+input[type=text]{@include fullBorder;font-size: 12px;color:$titleC;padding-left: 10px;padding-right:10px;outline: none;height: 32px;font-family: "Roboto";background:none;}
+input[type=text]{padding-top: 0}
+select:focus,
+.selectDropdown:focus,
+textarea:focus,
+input[type=email]:focus,
+input[type=password]:focus,
+input[type=text]:focus{border-color:$textC;transition:$x2 all;}
+textarea{min-height:130px;padding: 15px;text-indent: 0 }
+select{float: left;border:1px #ECF0F6 solid;outline: none;color: $title2ndC;padding: 10px 15px 10px 10px;font-size: 12px;background:transparent url('../img/icons/select.png') no-repeat 90% 50%;-webkit-appearance: none;overflow: hidden;-moz-appearance: none;-webkit-appearance: none;-ms-appearance: none;-moz-appearance: none;appearance: none;}
+// select{float: left;background:#FFF;border:1px #ECF0F6 solid;outline: none;border-radius: 1px;color: #9D9D9D;padding: 0 8px;width:220px;height: 34px;font-size: 11px;background:#FFF url(../img/icon/select-arrow.png) no-repeat right 14px;-webkit-appearance: none;overflow: hidden;-moz-appearance: none;-webkit-appearance: none;-ms-appearance: none;-moz-appearance: none;appearance: none;}
+// .checkbox label input {display: none;}
+// .checkbox label span {height: 17px; width: 17px;display: inline-block;margin: 15px 5px 0 0;position: relative;background: url(../img/icon/checkbox.png) top;top: 5px;transition: .2s all}
+// .checkbox input[type=checkbox]:checked + span {background: url(../img/icon/checkbox.png) bottom;}
+
+
+// ::-webkit-input-placeholder {font-size: 10px;color: #D5DAE1}
+// ::-moz-placeholder {font-size: 10px;color: #D5DAE1}
+::-webkit-input-placeholder {font-size: 12px;color: $title2ndC;}
+::-moz-placeholder {font-size: 12px;color: $title2ndC;}
+.placeholder {font-size: 12px;color: $title2ndC;}
+.myAccount ::-webkit-input-placeholder {font-size: 13px;color: $title2ndC;}
+.myAccount ::-moz-placeholder {font-size: 13px;color: $title2ndC;}
+.myAccount .placeholder {font-size: 13px;color: $title2ndC;}
+.helpCenter ::-webkit-input-placeholder {font-size: 13px;color: $title2ndC;}
+.helpCenter ::-moz-placeholder {font-size: 13px;color: $title2ndC;}
+.helpCenter .placeholder {font-size: 13px;color: $title2ndC;}
+.myAccount textarea, .myAccount input[type=email], .myAccount input[type=password], .myAccount input[type=text],
+.helpCenter textarea, .helpCenter input[type=email], .helpCenter input[type=password], .helpCenter input[type=text]{
+	font-size: 13px;
+}
+
+/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: rgba(25,25,25,.3);text-shadow: none;}
+::selection {background: rgba(25,25,25,.3); text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color:transparent;}
+
+ins {background-color: #fcd700; color: #000; text-decoration: none;}
+mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
+
+/* Mozilla dosen't style place holders by default */
+ul{list-style: none;}
+label{color: #6b7684;cursor: default;}
+
+.noOverflow{overflow:hidden;}
+
+.left{float:left;}
+.right{float:right;}
+.hide{visibility:hidden;opacity:0;transition:$x1 all;}
+.hidden{display:none!important;}
+.visible{display:block!important;}
+.center{text-align:center;}
+
+/*Styled checkboxes and radiobuttons*/
+input[type=checkbox],input[type=radio]{display: none;}
+form label.checkbox, form label.radio{position: relative;float: left;
+	&.radio{
+		&:before{content:""; border-radius: 50%;width: 12px;height: 12px;margin-top: 4px;}
+	}
+	&:before{content:"";display:block;width: 12px;height: 12px;background-color: transparent;border:1px solid $borderFooterC;float: left;margin-right: 5px;margin-top:2px;}
+}
+form input[type=radio]:checked+label:after{
+	content: "";border:3px solid $btnC;border-radius: 50%;position: absolute;top:7px;left:3px;
+}
+form input[type=checkbox]:checked+label:after{
+	content: "";padding:2px 3px 2px 4px;border:2px solid $btnC;border-top:none;border-right:none;position:absolute;top:4px;left:2px;transform:rotate(-45deg);
+}
+
+// Input styles for my Account
+.myAccount{
+	input{height: 36px;line-height: 36px;border-color: $MA_borderGrayC;
+		&:disabled{background-color: $MA_backgroundLightC;}
+	}
+}
+header {
+	a.disabled{cursor: default;	opacity: 0.6;
+		&:hover{color: #f1f1f1;	}
+	}
+	nav ul li:nth-child(2){
+		a{cursor: default;opacity: 0.6;
+		&:hover{color: #f1f1f1;}
+		}
+	}
+}
+
+footer .links{
+	a.disabled{cursor: default;opacity: 0.6;border-bottom: none;
+		&:hover{border-bottom: none;color: #7b8191;}
+	}
+}
+
+
+// scroll chrome
+@mixin customScrollbar($size, $background-color, $foreground-color){
+	::-webkit-scrollbar {width:$size;height: $size;padding:10px 0 10px 1px }
+	::-webkit-scrollbar-thumb {background-color: $foreground-color;}
+	::-webkit-scrollbar-track {background-color: $background-color;}
+
+	// For Internet Explorer
+	body {
+		scrollbar-face-color: $foreground-color;
+		scrollbar-track-color: $background-color;
+	}
+}

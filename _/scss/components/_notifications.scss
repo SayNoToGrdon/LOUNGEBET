@@ -1,0 +1,15 @@
+.myAccount{
+	.notifyCenter{text-align:center;}
+	.notify{width:100%;margin: 0 auto;padding:10px;font-size:13px;color:$MA_textC;position:relative;float:left;
+		span{font-weight: 600;}
+		&:before{content:"";width:20px;height:20px;position:absolute;left:10px;top:10px;}
+		&.marginTop{margin-top:20px;}
+		&.center{width: auto;float: none;display: inline-block;}
+		&.noResult{padding-left:35px;
+			&:before{background-position: 0 -435px;background-image:url(../img/icons/sprite.png);}
+		}
+		&.success{padding-left:50px;
+			&:before{width:35px;background-position: -26px -436px;background-image:url(../img/icons/sprite.png);}
+		}
+	}
+}
