@@ -2,8 +2,8 @@
 // @import "bourbon/bourbon";
 
 // Base
-@import "base/reset";
-@import "base/typography";
+//@import "base/reset";
+//@import "base/typography";
 @import "base/grid";
 @import "base/fonticon";
 
@@ -19,7 +19,7 @@
 @import "layout/lightbox";
 
 // Themes
-@import "themes/theme"; 
+@import "themes/theme";
 
 // Utilities
 @import "utils/helpers";
@@ -45,7 +45,6 @@
 @import 'vendors/flag-icon-list';
 @import 'vendors/_jquery-ui';
 
-
 // Pages
 // @import "pages/home";
 @import "pages/registration";
@@ -56,18 +55,3 @@
 @import "pages/promotions";
 @import "pages/promotions-casino-view";
 @import "pages/footer-lightbox";
-
-// + My Account
-@import "my_account/balance_management";
-@import "my_account/my_profile";
-@import "my_account/history";
-@import "my_account/promotions";
-@import "my_account/vip";
-@import "my_account/messages";
-
-// + Help Center
-@import "help_center/contacts";
-@import "help_center/help_center";
-@import "help_center/home";
-@import "help_center/faq";
-
