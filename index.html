@@ -6,31 +6,154 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!-- Important stuff for SEO -->
 	<title></title>
-	<meta name="description" content="DESCRIPTION" />
-	<meta name="Copyright" content="" />
+	<meta name="description" content="DESCRIPTION"/>
+	<meta name="Copyright" content=""/>
 	<!-- Touch Meta Tags -->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, maximum-scale=1.0">
 	<meta name="theme-color" content="#105B63">
 	<!-- FavIcon -->
-	<link rel="shortcut icon" href="_/img/favicon.ico" />
+	<!--<link rel="shortcut icon" href="_/img/favicon.ico" />-->
 	<!-- CSS and Fonts-->
 	<link rel="stylesheet" href="_/css/style.css" />
 	<!-- <link rel="stylesheet" href="_/css/slideme.css" /> -->
-	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css' data-noprefix>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css' data-noprefix>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet' type='text/css'
+		  data-noprefix>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:400,500,600,700' rel='stylesheet' type='text/css'
+		  data-noprefix>
 	<!-- All JavaScript at the bottom, except this Modernizr build & CSS Browser Selector User Agent. -->
 </head>
-<body ng-app="Vbet" ng-controller="Ctrl">
-    <div ng-include="'includes/header.html'"></div>
-    <div ui-view></div>
-    <footer ng-include="'includes/footer.html'"></footer>
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/angular/angular.js"></script>
-    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+<body>
+<header>
+	<div class="overlay"></div>
+	<div class="headerBG"></div>
+	<div class="container">
+		<div class="wraper">
+			<div class="">
 
-    <script src="_/scripts/angular/app.js"></script>
-    <script src="_/scripts/angular/Controller.js"></script>
-    <script src="_/scripts/angular/routes.js"></script>
+			</div>
+			<!--<h1 class="logo">
+                <a href="#">Loungebet</a>
+            </h1>-->
+			<nav>
+				<ul>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+					<li><a href="#"></a></li>
+				</ul>
+			</nav>
+			<!-- Logged In - Account -->
+			<div class="loggedInDetails">
+				<div class="balance">
+					<span class="title"><i>$345</i><i>Show Balance</i></span>
+					<em class="hover"><!-- on hover --></em>
+
+					<div class="dropdown">
+						<div class="row top">
+							<!-- <span class="toggle">Hide Balance</span> -->
+							<span class="deposit"><a href="#">Deposit</a></span>
+						</div>
+						<div class="row total">
+							<p>Total Balance <i>$290</i></p>
+						</div>
+						<div class="row">
+							<p>Withdrawable Balance <i>$290</i></p>
+						</div>
+						<div class="row totalBonus">
+							<p>Total Bonus Balance <i>$290</i></p>
+						</div>
+						<div class="row withProgress">
+							<p>Free Bets <i> $290</i></p>
+
+							<div class="progress">
+								<span style="width:40%"></span>
+							</div>
+							<p class="withDot"><i>$70</i> <i>$220</i></p>
+						</div>
+						<div class="row withProgress">
+							<p>Casino Bonus <i>$170</i></p>
+
+							<div class="progress">
+								<span style="width:70%"></span>
+							</div>
+							<p class="withDot"><i>$120</i> <i>$150</i></p>
+						</div>
+					</div>
+				</div>
+				<div class="user">
+					<span class="title"></span>
+
+					<div class="dropdown">
+						<div class="row top">
+							<p class="title">Current Level: 3</p>
+
+							<p>Accumulated Points: <b>3650</b></p>
+
+							<div class="progress">
+								<span style="width:40%"></span>
+							</div>
+							<div class="bottom">
+								<p>Next Level: <b>4</b></p>
+
+								<p>Required Points: <b>350</b> <a href="#">more info</a></p>
+							</div>
+						</div>
+						<ul>
+							<li><a href="#">Balance Management</a></li>
+							<li><a href="#">My Profile</a></li>
+							<li><a href="#">History</a></li>
+							<li><a href="#">Promotions</a>
+							<li><a href="#">VIP</a>
+							<li><a href="#">Messages</a></li>
+							<li><a href="#">Log Out</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="message">
+                        <span class="title">
+                            <i class="notification">10</i>
+                        </span>
+
+					<div class="dropdown">
+						<ul>
+							<li><a href="../../my_account/6_messages/6_Messages_Read.html" class="unread">Re: How to
+								win <i>Today</i></a></li>
+							<li><a href="../../my_account/6_messages/6_Messages_Read.html" class="unread">Re: How to
+								deposit <i>Yersterday</i></a></li>
+							<li><a href="../../my_account/6_messages/6_Messages_Read.html">First Deposit Bonus <i>3
+								days ago</i></a></li>
+							<li><a href="../../my_account/6_messages/6_Messages_Read.html">Welcome Bonus <i>50 days
+								ago</i></a></li>
+							<li><a href="../../my_account/6_messages/6_Messages_Read.html">Welcome <i>78 days
+								ago</i></a></li>
+						</ul>
+						<a href="../../my_account/6_messages/6_Messages_Inbox.html" class="viewAll">&mdash; View
+							All &mdash;</a>
+					</div>
+				</div>
+			</div>
+			<!-- <i class="notification">10</i> -->
+
+			<!-- Login/Register -->
+                <span>
+                    <a href="#" fancybox
+					   class="btn mainC lightbox"></a>
+                    <a href="#" fancybox
+					   class="btn secC lightbox"></a>
+                </span>
+		</div>
+	</div>
+	</div><!-- container -->
+
+</header>
+<section>
+
+</section>
+<footer>
+
+</footer>
+
+
 </body>
 </html>
