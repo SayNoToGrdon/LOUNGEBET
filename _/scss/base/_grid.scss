@@ -1,16 +1,5 @@
 // http://codepen.io/irinakramer/pen/jcLlp
-/**
-*
-*
-*
-*
-*
-*
-*
-*
-*
 
-**/
 .wrapper{
 	max-width:1350px;
 	margin: auto;
@@ -77,14 +66,13 @@ $gutter: 1em;
 }
 
 // Menu
-.navigation {
+.nav {
 	list-style: none;
 	/*background: deepskyblue;*/
 	background: #2390ff;
 	margin: 0 0 1em;
 	border: 1px solid black;
 	border-radius: 3px;
-
 	display: flex;
 
 	-webkit-flex-flow: row wrap;
