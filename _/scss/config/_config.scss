@@ -124,6 +124,8 @@ $txtC_addsResult : #3988c0;
 $txtC_btn : #fffff7;
 
 $borderC : #a09c90;
+$borderC_header : #237A81;
+$borderC_headerDark : #0B4046;
 
 //************************//
 //        Transition      //
@@ -162,6 +164,13 @@ $x5: 2s;
 	text-transform: uppercase;
 	font-weight: 500;
 	color: $txtC_btn;
+}
+
+@mixin activeItem() {
+	border-radius:4px;
+	box-shadow: 0 1px 0 rgba(255,255,255,0.5), inset 0 1.5px 0 rgba(0,0,0,0.5);
+	border-right: solid 1.5px rgba(0,0,0,0.1);
+	border-left: solid 1.5px rgba(0,0,0,0.1);
 }
 
 body{ margin:0;padding:0;background:$bgC_body; }
