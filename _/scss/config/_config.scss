@@ -1,123 +1,96 @@
-
-// C stands for Color
-// B stands for Border
-// BR stands for Border Radius
-// CO stands for Color Opaticy
+//************************//
+//      SPORT Colors      //
+//************************//
+$spC_soccer : #1ba673;
+$spC_tennis : #0c6ab3;
+$spC_basketball : #ef7626;
+$spC_volleyball : #918560;
+$spC_iceHockey : #b8d4e6;
+$spC_baseball : #b07a5c;
+$spC_rugby : #799755;
+$spC_handball : #42777f;
+$spC_snooker : #37b764;
+$spC_amFootball : #14805e;
+$spC_athletics : #0b5b99;
+$spC_ausRules : #0b614b;
+$spC_badminton : #70c2a7;
+$spC_bandy : #69b5b4;
+$spC_beachFootball : #bfaf7e;
+$spC_beachHandball : #ccbb87;
+$spC_beachVoleyball : #d9c68f;
+$spC_biathlon : #bedbed;
+$spC_bowls : #2a8c4c;
+$spC_boxing : #0e7acc;
+$spC_chess : #edbd6f;
+$spC_cricket : #1bab7d;
+$spC_curling : #76bbef;
+$spC_cycling : #595959;
+$spC_darts : #d32939;
+$spC_diving : #118be9;
+$spC_floorball : #72cddb;
+$spC_formula : #3f3f3f;
+$spC_futsal : #65b5c2;
+$spC_golf : #189946;
+$spC_gymnastics : #03b5a5;
+$spC_fieldHockey : #168a70;
+$spC_horseRacing : #6d5e4d;
+$spC_motosport : #8d612e;
+$spC_nascar : #4d4d4d;
+$spC_poolBetting : #b35fb1;
+$spC_rally : #c28540;
+$spC_rugbyLeague : #799755;
+$spC_rugbyUnion : #799755;
+$spC_shooting : #d5d345;
+$spC_swimming : #118be9;
+$spC_tableTennis : #0c82b3;
+$spC_waterPolo : #338fd6;
+$spC_Esports : #5e55a1;
+$spC_mma : #868686;
+$spC_allVrSports : #8555a1;
+$spC_gaelicFootball : #358014;
+$spC_hurling : #189946;
+$spC_cyberFootball : #1b1b1b;
+$spC_surfing : #3598e4;
+$spC_Ebasketball : #d96c23;
+$spC_callOfDuty : #000000;
+$spC_counterStrike : #c28503;
+$spC_dota2 : #a93844;
+$spC_lol : #2d2d2d;
+$spC_hearthStone : #d8bf56;
+$spC_sumo : #b0a174;
+$spC_speedway : #aca696;
+$spC_squash : #e1b93f;
+$spC_rugbySevens : #799755;
+$spC_crossCntrySkiing : #bedbed;
+$spC_shortTrSpeedSkating : #b1cdde;
+$spC_freestyleSkiing : #bfbfbf;
+$spC_luge : #99c4de;
+$spC_figureSkating : #b1cdde;
+$spC_autoRacing : #4d4d4d;
+$spC_alpineSkiing : #93c6e5;
+$spC_snowBoarding : #9dd3f5;
+$spC_pesapallo : #db8e48;
+$spC_extremeSport : #a61f2d;
+$spC_skiJumping : #c4dae8;
+$spC_triathlon : #a1c4c6;
+$spC_netball : #d0b563;
+$spC_poker : #116b4f;
+$spC_lacrosse : #168763;
+$spC_rowing : #0f81d9;
+$spC_sailing : #0d72bf;
+$spC_worldWrestling : #B80F20;
+$spC_freestyleWresling : #edbe13;
+$spC_grecoRomanWrestling : #edbe13;
+$spC_rinkHockey : #e3bb6d;
+$spC_inlineHockey : #ffcb78;
 
 //************************//
-//        Colors          //
+//       MAIN Colors      //
 //************************//
+$bodyBackgroundC : #E6E5DC;
+$baseC : #105b63;
+$headerSubMenuBC : #0e5259;
 
-// #F78429 Orange
-// #57B667 Original green
-// #3A8B55 Green
-// #54BA4C Green bright
-// #2FB43D Green bright 2
-
-$backgroundC : #0e1629;
-$background40CO : rgba(14,22,41,.4);
-$background60CO : rgba(14,22,41,.6);
-$background80CO : rgba(14,22,41,.8);
-$background95CO : rgba(14,22,41,.95);
-$subtleC : #2B2F3F;
-$logoC : #71c7ea;
-$btnC : #0d8443;
-$btnHoverC : #10a24f;
-$btn2C : #68C1E8;
-$btn2HoverC : #68b7d9;
-$btn3C : #365263;
-$btn3HoverC : #426579;
-$headerC : #121623;
-$headerCO : rgba(18,22,35,1);
-$textC : #6c7389;
-$brightFontC : #f1f1f1;
-$brightFont2C : #c6c6c6;
-$bright1C: #e4e4e4;
-$bright2C: #c0c0c0;
-$textLinkC : $btnC;
-$goldishC : #cfbe65;
-$goldishDarkC : #b2a356;
-$iconC : #7b8191;
-$titleC : #7b8191;
-$title2ndC : #484F5E;
-$title3rdC : #A9ADB7;
-$title4thC : #c2c5cd;
-$errorC : #b85656;
-$errorLightC : #c85e5e;
-$borderFooterC : #474c5d;
-$lightboxBackgroundC : #161a29;
-$goUpC : #191C28;
-//for input color, input:focus borderColor and links hover inlightbox
-$activeFontC: #919ab9;
-$lightActive: #1f2435;
-// Temporarily Level colors for profile dropdown
-$level1 : #2a3359;
-$level2 : #42508a;
-
-// My Account
-$MA_backgroundDark85CO : rgba(30,32,52,.85);
-$MA_backgroundDarkC : #24272a;
-$MA_backgroundDark2C : #111821;
-$MA_backgroundLightC : #f3f3f3;
-$MA_backgroundLight2C : #fbfbfb;
-$MA_backgroundWhiteC : #ffffff;
-$MA_progressC:#4f505f;
-$MA_progressFillC:#60a3e3;
-$MA_progressFillCO:rgba(96,163,227,.8);
-
-$MA_backgroundGrayC : #d3d3d3;
-$MA_linkC : #0082cd;
-$MA_link2C : #00b3e3;
-$MA_menuBackgroundC : #303135;
-$MA_titleC : #25262a;
-$MA_title2ndC : #adadad;
-$MA_headerLinkC : #dcd8d6;
-$MA_lightBorderC : #d4d4d4;
-$MA_borderSidebarDarkC : #1f2224;
-$MA_borderSidebarSubC : #3c4542;
-$MA_borderSidebarSubTextC : #9fadac;
-$MA_borderSidebarLightC : #2f3134;
-
-$MA_textC : #4d585a;
-$MA_blueC : #1796DD;
-$MA_greenC : #0d8444;
-$MA_warningC: #f6a704;
-
-$MA_messageNotificationC : #C85E5E;
-$MA_redBorderC : #e73c50;
-$MA_greenBorderC : #0d8443;
-$MA_tableHeaderC : #27708f;
-$MA_tableTitleBackgroundC : #fafbfb;
-$MA_notifyBackgroundC : #d6f7ff;
-$MA_notifyBorderC : #44c8e8;
-$MA_borderGrayC : #6e7c7c;
-$MA_backgroundPendingC : #fceadd;
-$MA_backgroundRejectedC : #ffd3d3;
-$MA_backgroundCanceledC : #dddddd;
-$MA_errorC : #e83c51;
-$MA_successC : #a2282e;
-$MA_warningLightC: #f5d34b;
-$MA_scrollTrackC : #D4D4D4;
-$MA_scrollThumbC : #c2c2c2;
-$MA_proccessC : #d18901;
-$MA_successMessageC : #acdb90;
-$MA_successMessageBorderC : #6bc048;
-$MA_inactiveC : #8f9d9d;
-$MA_editMessageC : #f5dc6a;
-$MA_endMessageC : #fa91a2;
-
-$MA_menuTabsBorderC : #C8C8C8;
-$MA_menuTabsTitleC : #1896dd;
-
-//Help Center
-$HC_messageNotificationC : #be3a49;
-$HC_backgroundLightC : #f4f4f4;
-$HC_buttonBlueC: #0082cb;
-$HC_buttonGreenHoverC: #0b733a;
-
-$TC_lightboxBorderC: #121626;
-$TC_headerTextC: #f2f2f2;
-$TC_titleTextC: #232323;
 //************************//
 //        Transition      //
 //************************//
@@ -290,7 +263,7 @@ footer .links{
 	::-webkit-scrollbar-thumb {background-color: $foreground-color;}
 	::-webkit-scrollbar-track {background-color: $background-color;}
 
-	// For Internet Explorer
+	// For Internet Explorer >_<
 	body {
 		scrollbar-face-color: $foreground-color;
 		scrollbar-track-color: $background-color;
