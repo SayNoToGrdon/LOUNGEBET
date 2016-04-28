@@ -153,7 +153,7 @@
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'loungebet_icons' !important;
   speak: none;
-  font-style: normal;
+  font-style: normal!important;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
@@ -162,6 +162,10 @@
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+i:before{
+  content: '';
+  font-style: normal;
 }
 .icon-full_screen:before {
   content: "\61";
@@ -178,9 +182,30 @@
 .icon-settings:before {
   content: "\65";
 }
+.icon-live_stream,
+.icon-outrights,
+.icon-statistics{
+  position: relative;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+}
+.icon-live_stream .path1,
+.icon-live_stream .path2,
+.icon-statistics .path1,
+.icon-statistics .path2,
+.icon-statistics .path3{
+  position: absolute;
+}
+.icon-live_stream .path2,
+.icon-statistics .path2,
+.icon-statistics .path3{
+    right: 0;
+}
 .icon-statistics .path1:before {
   content: "\66";
-  color: rgb(1, 1, 1);
+  color: rgb(1, 1, 1);  
+
 }
 .icon-statistics .path2:before {
   content: "\67";
@@ -278,6 +303,7 @@
 .icon-X2:before {
   content: "\37";
 }
+
 .icon-live_stream .path1:before {
   content: "\38";
   color: rgb(0, 0, 0);
