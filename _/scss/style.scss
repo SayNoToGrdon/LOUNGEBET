@@ -1,6 +1,7 @@
 // Bourbon
 // @import "bourbon/bourbon";
 
+
 // Base
 @import "base/reset";
 @import "base/typography";
@@ -13,8 +14,9 @@
 
 // Config (colors, fonts)
 @import "config/config";
+
 // Layouts
-//@import "layout/header";
+@import "layout/header";
 //@import "layout/footer";
 //@import "layout/lightbox";
 
