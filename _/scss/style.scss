@@ -15,7 +15,6 @@
 // Config (colors, fonts)
 @import "config/config";
 
-
 // Layouts
 @import "layout/header";
 //@import "layout/footer";
@@ -29,7 +28,7 @@
 //@import "utils/variables";
 
 // Components
-//@import "components/buttons";
+@import "components/buttons";
 //@import "components/dropdown";
 //@import "components/language";
 
