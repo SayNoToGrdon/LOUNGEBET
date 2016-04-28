@@ -1,11 +1,13 @@
 // Bourbon
 // @import "bourbon/bourbon";
 
+
 // Base
 @import "base/reset";
 @import "base/typography";
 @import "base/grid";
 @import "base/fonticon";
+
 
 // Media Query
 @import "media/media";
@@ -13,8 +15,9 @@
 // Config (colors, fonts)
 @import "config/config";
 
+
 // Layouts
-//@import "layout/header";
+@import "layout/header";
 //@import "layout/footer";
 //@import "layout/lightbox";
 

@@ -163,3 +163,7 @@ $x5: 2s;
 	font-weight: 500;
 	color: $txtC_btn;
 }
+
+body{ margin:0;padding:0;background:$bgC_body; }
+a {text-decoration: none;transition:$x1 all;}
+a:focus{outline: none;}
