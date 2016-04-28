@@ -132,7 +132,8 @@ $gutter: 1em;
 }
 
 .row-fit > .cell {
-	flex: 1;
+	justify-content: space-around;
+	// flex: 1;
 }
 .row-full > .cell {
 	flex: 0 0 100%;
