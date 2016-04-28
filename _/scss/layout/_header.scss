@@ -17,13 +17,16 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 	.subNav{ width:100%;position:relative;background: $bgC_baseDark;border-top: solid 1px $borderC_headerDark;
 		.container{min-height: inherit;}
 		li{
-			a{font-size:12px;margin-top:0;text-transform:capitalize;padding: 12px 1.73636363636%;opacity:0.8;color:$txtC_menu;
+			a{font-size:12px;margin-top:0;text-transform:capitalize;padding: 11px 1.73636363636%;opacity:0.8;color:$txtC_menu;
 				span{color:$txtC_menu_hover;}
 				&:hover{opacity:1;color:$txtC_menu}
 				&.active{opacity:1;color:$txtC_menu;box-shadow: none;border: none;position:relative;
 					&:before{ content: "";position: absolute;bottom:0;left:42%;display: block;width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid $bgC_body;left: 40%;bottom: 0;}
 				}
 			}
+		}
+		.details{text-align: right;cursor: default;
+			.items{display:inline-block; text-align:center; cursor: pointer; padding:11px;text-align: center;border-left:solid 1px $borderC_headerDark;opacity:0.8;color:$txtC_menu;}
 		}
 	}
 

@@ -145,9 +145,11 @@ $x5: 2s;
 @mixin fullBorder() {
 	border: 1px solid $borderC;
 }
+
 @mixin topBorder() {
 	border-top: 1px solid $borderC;
 }
+
 @mixin bottomBorder() {
 	border-bottom: 1px solid $borderC;
 }
