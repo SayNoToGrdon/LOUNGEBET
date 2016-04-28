@@ -1,19 +1,6 @@
-
-// C stands for Color
-// B stands for Border
-// BR stands for Border Radius
-// CO stands for Color Opaticy
-
 //************************//
 //        Colors          //
 //************************//
-
-// #F78429 Orange
-// #57B667 Original green
-// #3A8B55 Green
-// #54BA4C Green bright
-// #2FB43D Green bright 2
-
 $backgroundC : #0e1629;
 $background40CO : rgba(14,22,41,.4);
 $background60CO : rgba(14,22,41,.6);
@@ -290,7 +277,7 @@ footer .links{
 	::-webkit-scrollbar-thumb {background-color: $foreground-color;}
 	::-webkit-scrollbar-track {background-color: $background-color;}
 
-	// For Internet Explorer
+	// For Internet Explorer >_<
 	body {
 		scrollbar-face-color: $foreground-color;
 		scrollbar-track-color: $background-color;
