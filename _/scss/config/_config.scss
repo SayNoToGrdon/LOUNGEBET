@@ -87,9 +87,42 @@ $spC_inlineHockey : #ffcb78;
 //************************//
 //       MAIN Colors      //
 //************************//
-$bodyBackgroundC : #E6E5DC;
-$baseC : #105b63;
-$headerSubMenuBC : #0e5259;
+$bgC_body : #e6e5dc;
+$bgC_base : #105b63;
+$bgC_baseDark : #0e5259;
+$bgC_event_active : #1c89b0;
+$bgC_moduleTab_active : #1c89b0;
+$bgC_moduleTab : #f3f2e9;
+$bgC_orangeBtn : #ff8067; /* also border of active tabs */
+$bgC_orangeBtn_hover : #e6735c;
+$bgC_greenBtn : #468966;
+$bgC_greenBtn_hover : #397054;
+$bgC_titleBtn : #f3f2e9;
+$bgC_titleBtn_hover : #f2f0e1;
+$bgC_titleMarket : #ede6d6;
+$bgC_titleMarket_active : #e6dac1;
+$bgC_odds : #fffef6;
+$bgC_odds_hover : #f5f1e6;
+$bgC_odds_active : #1ca1b0;
+$bgC_odds_inactive : #eeeee5;
+$bgC_openedEvent : #f5f4ec;
+$bgC_goal : #ffd34e;
+$bgC_tooltip : #689ec4;
+$bgC_tooltipGrey : #8f9193;
+$bgC_dropdown : #f1f0e5;
+$bgC_dropdown_hover : #f7ecca;
+$bgC_footer : #dfd8c7;
+$bgC_footerPayment : #dbd3c1;
+
+$txtC_menu : #ffffff; /* + submenu */
+$txtC_menu_hover : #ff8067; /* + current score */
+$txtC_basic : #303838;
+$txtC_currentTime : #44983d;
+$txtC_mainRed : #ca5555;
+$txtC_addsResult : #3988c0;
+$txtC_btn : #fffff7;
+
+$borderC : #a09c90;
 
 //************************//
 //        Transition      //
@@ -102,170 +135,30 @@ $x4: 1.5s;
 $x5: 2s;
 
 //************************//
-//       arrowAfter       //
-//************************//
-// For @extend CSS Arrow
-.arrowAfter,.arrowBefore{bottom: 100%;left: 50%;border: solid transparent;content: " ";height: 0;width: 0;position: absolute;pointer-events: none;}
-.arrowAfter{border-color: rgba(255, 255, 255, 0);border-bottom-color:$brightFontC;border-width: 5px;margin-left: -5px;}
-.arrowBefore{border-color: rgba(255, 255, 255, 0);border-bottom-color:$brightFontC;border-width: 6px;margin-left: -6px;}
-
-//************************//
 //        	Mixins	      //
 //************************//
 
 // Borders
 @mixin fullBorder() {
-	border: 1px solid $borderFooterC;
+	border: 1px solid $borderC;
 }
 @mixin topBorder() {
-	border-top: 1px solid $borderFooterC;
+	border-top: 1px solid $borderC;
 }
 @mixin bottomBorder() {
-	border-bottom: 1px solid $borderFooterC;
+	border-bottom: 1px solid $borderC;
 }
 
-@mixin MA_fullBorder() {
-	border: 1px solid $MA_scrollTrackC;
-}
-@mixin MA_bottomBorder() {
-  border-bottom: 1px solid $MA_scrollTrackC;
-}
-@mixin MA_topBorder() {
-  border-top: 1px solid $MA_scrollTrackC;
-}
-// User select
-@mixin selectNone() {
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-@mixin fullBorderInputs() {
-	border: 1px solid $MA_borderGrayC;
-}
-@mixin rightBorder() {
-	border-right: 1px solid $MA_lightBorderC;
-}
-
-//************************//
-//		Page Configs	  //
-//************************//
-
-body{}
-body.myAccount{background-image:url('../img/bg/bg-my_account.jpg');background-size:100%; background-repeat:no-repeat;}
-body.helpCenter{background-image:url('../img/bg/bg-help_center.png');background-size:100%; background-repeat:no-repeat;}
-select, input, textarea {color: #ECF0F6;outline: none;}
-b{font-weight: 600}
-a {color: $logoC;text-decoration: none;transition:$x1 all;}
-a:focus{outline: none;}
-a:hover {}
-ul,ol{list-style: none;}
-textarea,
-input[type=email],
-input[type=password],
-input[type=text]{@include fullBorder;font-size: 12px;color:$titleC;padding-left: 10px;padding-right:10px;outline: none;height: 32px;font-family: "Roboto";background:none;}
-input[type=text]{padding-top: 0}
-select:focus,
-.selectDropdown:focus,
-textarea:focus,
-input[type=email]:focus,
-input[type=password]:focus,
-input[type=text]:focus{border-color:$textC;transition:$x2 all;}
-textarea{min-height:130px;padding: 15px;text-indent: 0 }
-select{float: left;border:1px #ECF0F6 solid;outline: none;color: $title2ndC;padding: 10px 15px 10px 10px;font-size: 12px;background:transparent url('../img/icons/select.png') no-repeat 90% 50%;-webkit-appearance: none;overflow: hidden;-moz-appearance: none;-webkit-appearance: none;-ms-appearance: none;-moz-appearance: none;appearance: none;}
-// select{float: left;background:#FFF;border:1px #ECF0F6 solid;outline: none;border-radius: 1px;color: #9D9D9D;padding: 0 8px;width:220px;height: 34px;font-size: 11px;background:#FFF url(../img/icon/select-arrow.png) no-repeat right 14px;-webkit-appearance: none;overflow: hidden;-moz-appearance: none;-webkit-appearance: none;-ms-appearance: none;-moz-appearance: none;appearance: none;}
-// .checkbox label input {display: none;}
-// .checkbox label span {height: 17px; width: 17px;display: inline-block;margin: 15px 5px 0 0;position: relative;background: url(../img/icon/checkbox.png) top;top: 5px;transition: .2s all}
-// .checkbox input[type=checkbox]:checked + span {background: url(../img/icon/checkbox.png) bottom;}
-
-
-// ::-webkit-input-placeholder {font-size: 10px;color: #D5DAE1}
-// ::-moz-placeholder {font-size: 10px;color: #D5DAE1}
-::-webkit-input-placeholder {font-size: 12px;color: $title2ndC;}
-::-moz-placeholder {font-size: 12px;color: $title2ndC;}
-.placeholder {font-size: 12px;color: $title2ndC;}
-.myAccount ::-webkit-input-placeholder {font-size: 13px;color: $title2ndC;}
-.myAccount ::-moz-placeholder {font-size: 13px;color: $title2ndC;}
-.myAccount .placeholder {font-size: 13px;color: $title2ndC;}
-.helpCenter ::-webkit-input-placeholder {font-size: 13px;color: $title2ndC;}
-.helpCenter ::-moz-placeholder {font-size: 13px;color: $title2ndC;}
-.helpCenter .placeholder {font-size: 13px;color: $title2ndC;}
-.myAccount textarea, .myAccount input[type=email], .myAccount input[type=password], .myAccount input[type=text],
-.helpCenter textarea, .helpCenter input[type=email], .helpCenter input[type=password], .helpCenter input[type=text]{
-	font-size: 13px;
-}
-
-/* Custom text-selection colors (remove any text shadows: http://twitter.com/miketaylr/status/12228805301) */
-::-moz-selection{background: rgba(25,25,25,.3);text-shadow: none;}
-::selection {background: rgba(25,25,25,.3); text-shadow: none;}
-
-/*	j.mp/webkit-tap-highlight-color */
-a:link {-webkit-tap-highlight-color:transparent;}
-
-ins {background-color: #fcd700; color: #000; text-decoration: none;}
-mark {background-color: #fcd700; color: #000; font-style: italic; font-weight: bold;}
-
-/* Mozilla dosen't style place holders by default */
-ul{list-style: none;}
-label{color: #6b7684;cursor: default;}
-
-.noOverflow{overflow:hidden;}
-
-.left{float:left;}
-.right{float:right;}
-.hide{visibility:hidden;opacity:0;transition:$x1 all;}
-.hidden{display:none!important;}
-.visible{display:block!important;}
-.center{text-align:center;}
-
-/*Styled checkboxes and radiobuttons*/
-input[type=checkbox],input[type=radio]{display: none;}
-form label.checkbox, form label.radio{position: relative;float: left;
-	&.radio{
-		&:before{content:""; border-radius: 50%;width: 12px;height: 12px;margin-top: 4px;}
-	}
-	&:before{content:"";display:block;width: 12px;height: 12px;background-color: transparent;border:1px solid $borderFooterC;float: left;margin-right: 5px;margin-top:2px;}
-}
-form input[type=radio]:checked+label:after{
-	content: "";border:3px solid $btnC;border-radius: 50%;position: absolute;top:7px;left:3px;
-}
-form input[type=checkbox]:checked+label:after{
-	content: "";padding:2px 3px 2px 4px;border:2px solid $btnC;border-top:none;border-right:none;position:absolute;top:4px;left:2px;transform:rotate(-45deg);
-}
-
-// Input styles for my Account
-.myAccount{
-	input{height: 36px;line-height: 36px;border-color: $MA_borderGrayC;
-		&:disabled{background-color: $MA_backgroundLightC;}
-	}
-}
-header {
-	a.disabled{cursor: default;	opacity: 0.6;
-		&:hover{color: #f1f1f1;	}
-	}
-	nav ul li:nth-child(2){
-		a{cursor: default;opacity: 0.6;
-		&:hover{color: #f1f1f1;}
-		}
-	}
-}
-
-footer .links{
-	a.disabled{cursor: default;opacity: 0.6;border-bottom: none;
-		&:hover{border-bottom: none;color: #7b8191;}
-	}
-}
-
-
-// scroll chrome
-@mixin customScrollbar($size, $background-color, $foreground-color){
-	::-webkit-scrollbar {width:$size;height: $size;padding:10px 0 10px 1px }
-	::-webkit-scrollbar-thumb {background-color: $foreground-color;}
-	::-webkit-scrollbar-track {background-color: $background-color;}
-
-	// For Internet Explorer >_<
-	body {
-		scrollbar-face-color: $foreground-color;
-		scrollbar-track-color: $background-color;
-	}
+// buttons
+@mixin btn($fontSize, $padding, $lineHeight) {
+	line-height: $lineHeight;
+	padding: $padding;
+	font-size: $fontSize;
+	display: inline-block;
+	height: auto;
+	border-radius: 4px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: $txtC_btn;
 }
