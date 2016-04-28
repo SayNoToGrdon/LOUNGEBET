@@ -1,5 +1,5 @@
 // Custom Fonts
-// Icons
+// Social Icons
 @font-face {
     font-family: 'socicon';
     src: url('../fonts/socicon.eot');
@@ -12,17 +12,8 @@
     font-style: normal;
     text-transform: initial;
 }
-[class^="socicon-"], [class*=" socicon-"] { /* Change to your class name, eg: icon, socicon, social... */
-  font-family: 'socicon';
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.socialIcons [class^="socicon-"], .socialIcons [class*=" socicon-"] { /* Change to your class name, eg: icon, socicon, social... */
+  font-family: 'socicon'; 
 }
 
 .socicon {
@@ -137,7 +128,7 @@
 
 
 
-
+/*All image icons*/
 @font-face {
   font-family: 'loungebet_icons';
   src:    url('../../fonts/loungebet_icons.eot?fa6pj1');
@@ -151,7 +142,7 @@
 
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'loungebet_icons' !important;
+  font-family: 'loungebet_icons';
   speak: none;
   font-style: normal!important;
   font-weight: normal;
@@ -338,3 +329,41 @@ i:before{
                     </span>
 */
 
+/*Payments methods icons*/
+@font-face {
+    font-family: 'Payment-Methods';
+    src:    url('../fonts/Payment-Methods.eot?3uv7ob');
+    src:    url('../fonts/Payment-Methods.eot?3uv7ob#iefix') format('embedded-opentype'),
+        url('../fonts/Payment-Methods.ttf?3uv7ob') format('truetype'),
+        url('../fonts/Payment-Methods.woff?3uv7ob') format('woff'),
+        url('../fonts/Payment-Methods.svg?3uv7ob#Payment-Methods') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.paymentsMethods [class^="icon-"], .paymentsMethods [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'Payment-Methods';   
+}
+
+.icon-master_card:before {
+    content: "\e904";
+}
+.icon-mastercard_securecode:before {
+    content: "\e905";
+}
+.icon-maestro:before {
+    content: "\e906";
+}
+.icon-visa_electron:before {
+    content: "\e903";
+}
+.icon-verified_by_visa:before {
+    content: "\e902";
+}
+.icon-Visa:before {
+    content: "\e901";
+}
+.icon-moneybookers:before {
+    content: "\e900";
+}

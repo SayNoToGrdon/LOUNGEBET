@@ -1,6 +1,6 @@
-footer {width:100%;clear:both;min-height:50px;background:$bgC_footer;
+footer {clear:both;min-height:50px;background:$bgC_footer;
 	.paymentsMethods{background:$bgC_footerPayment;
-		a{}
+		a{font-size: 48px; color:$txtC_paymentIcons;}
 	}
 	.container {
 

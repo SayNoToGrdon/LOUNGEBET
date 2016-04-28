@@ -12,6 +12,7 @@
 /*Basic row Styles*/
 .row {
 	display: flex;
+	display: -webkit-flex;
 	flex-flow: row;
 	flex-wrap: wrap;
 }
@@ -133,10 +134,12 @@ $gutter: 1em;
 
 .row-fit > .cell {
 	justify-content: space-around;
+	text-align: center;
 	// flex: 1;
 }
 .row-full > .cell {
-	flex: 0 0 100%;
+	justify-content: space-between;
+	// flex: 0 0 100%;
 }
 
 
