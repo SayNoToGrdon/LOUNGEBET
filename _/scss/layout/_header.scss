@@ -19,105 +19,17 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 		li{
 			a{font-size:12px;margin-top:0;text-transform:capitalize;padding: 11px 1.73636363636%;opacity:0.8;color:$txtC_menu;
 				span{color:$txtC_menu_hover;}
-				&:hover{opacity:1;color:$txtC_menu}
+				&:hover{opacity:1; color:$txtC_menu}
 				&.active{opacity:1;color:$txtC_menu;box-shadow: none;border: none;position:relative;
-					&:before{ content: "";position: absolute;bottom:0;left:42%;display: block;width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid $bgC_body;left: 40%;bottom: 0;}
+					&:before{ content: "";position: absolute;display: block;width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid $bgC_body;left: 40%;bottom: 0;}
 				}
 			}
+		}
+		.timeZone{display:inline-block; text-align:center; cursor: pointer; color:$txtC_menu; line-height: 36px;position: relative;
+			i{position:absolute; opacity:0.8; top: 35%; right: -20px;}
 		}
 		.details{text-align: right;cursor: default;
 			.items{display:inline-block; text-align:center; cursor: pointer; padding:11px;text-align: center;border-left:solid 1px $borderC_headerDark;opacity:0.8;color:$txtC_menu;}
 		}
 	}
-
-	// .headerBG{width:100%;position:relative;background-color:#1D202B;height:50px;}
-	//.iconLinks{width:15px;height:15px;background:url(../img/icons/sprite.png) no-repeat;float:right;margin:10px 0 0 0;text-indent:-9999px;overflow:hidden;}
-	//.iconLinks:hover{}
-	//.helpLinks{position:absolute;top:4px;right:5px;width:20%;
-	//	a{margin-right:10px;margin-left:0;
-	//		&:hover{}
-	//	}
-	//}
-	//.helpCenter{background-position:-26px -3px;margin-right:13px;padding:0;@extend .iconLinks;}
-	//.liveChat{background-position: -4px -3px;padding:0;@extend .iconLinks;}
-	//.timeStamp{margin:13px 0 0 15px;position:absolute;left:0;color:$titleC;}
-	//&:before{width:100%;height:100%;position:absolute;z-index: -1}
-	//&.sticky{width:100%;height:55px;
-	//	nav{}
-	//	nav ul{
-	//		a{padding: 5px 1.30208333333333%;
-	//			&.active{border:none;}
-	//		}
-	//	}
-	//	.container{min-width:980px;width:100%;animation:stickyHeaderOn 1s forwards;padding:0 0;box-shadow:0 0 30px rgba(0,0,0,.5);background:rgba(0,0,0,.5);height:55px;position:fixed;top:0;left: 0;bottom:0;right:0;z-index: 20;background:$background95CO;max-width:initial;}
-	//	.acc{top:2px;right:20px}
-	//	.logo{margin-top:10px;margin-left: 30px;}
-	//	.subNav{opacity:0;}
-	//	.wrap{width:100%;height:55px;max-width:1350px;margin:0 auto;}
-	//}
 }
-
-//  full Width
-//.fullWidth header{position:static;min-height:inherit;
-//	.acc{position: static;float:right;margin-top:10px;
-//		.helpLinks{position:static;float: right;width:auto;margin-top:10px;
-//			a{margin-right:12px;
-//				&.liveChat{margin-left:5px}
-//			}
-//		}
-//		.lang a.title{padding:8px 22px 0 0;
-//			&:hover{background:none}
-//		}
-//		.loggedInDetails{
-//			div span.title{
-//				&:hover{background-color:transparent;}
-//			}
-//		}
-//	}
-//}
-//
-//
-//@keyframes stickyHeaderOn{
-//    from, to {
-//        transform:translateY(-105px);
-//    }
-//    100% {
-//        transform:translateY(0);
-//    }
-//}
-//@keyframes stickyHeaderOff{
-//    from, to {
-//        opacity:0;
-//    }
-//    100% {
-//        opacity:1;
-//    }
-//}
-//
-//@media #{$maxMiniDesktop} {
-//    footer .secRow .social a{margin: 10px 0 0 4.3%;
-//        // &:before{top:5px;transform: scale(.8);}
-//    }
-//    footer .secRow small{width:82%;}
-//    footer .links li{width:19%}
-//    footer .payMethods{width: 71%;}
-//    footer .partners{width:24%;}
-//}
-//@media #{$customForDesk4} {
-//    header nav a{padding: 15px 1.00208333333333%;}
-//    header.sticky nav ul a{padding: 5px 1.00208333333333%;}
-//    header a.btn{padding:0 15px}
-//    header .acc .loggedInDetails .user span.title{
-//		padding-right:0;padding-left:20px;background:url(../img/icons/sprite.png) -289px -37px;background-repeat:no-repeat;text-indent:-9999px;
-//    }
-//    header .acc .loggedInDetails .balance span.title.hide i:first-child{opacity:1}
-//    header .acc .loggedInDetails .balance span.title i{width:0;font-size:0px;top: 4px;
-//    	&:before{opacity:1}
-//    }
-//    header .acc .help span.title{
-//		padding-right:5px;padding-left:10px;text-indent:-9999px;
-//		&:before{background:url(../img/icons/sprite.png) -269px -44px;background-repeat:no-repeat;content:"";float: left;width:15px;height:18px;margin: 7px 21px 0 0;}
-//    }
-//}
-
-
