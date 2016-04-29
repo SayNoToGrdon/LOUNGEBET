@@ -15,3 +15,6 @@
 .btn-transparant{ border: solid 1px $txtC_menu;
   &:hover{ background: $bgC_greenBtn; border-color:$bgC_greenBtn;}
 }
+
+[class^="btn-"]{cursor:pointer;}
+

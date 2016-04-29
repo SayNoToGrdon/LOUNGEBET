@@ -12,9 +12,12 @@ footer {clear:both;min-height:50px;background:$bgC_footer;
           }
         }
         &.socialIcons{flex:1 0 10%;
-          li{text-align: center;line-height:18px;white-space: nowrap;
-            &:first-child{border-bottom: 1px solid $borderC;padding:0 15px 25px;margin-bottom:10px;}
-            a {
+          li{text-align: center;white-space:nowrap;
+            i{margin-right: 5px;
+              &:before{font-size: 14px;}
+            }
+            &:first-child{border-bottom: 1px solid $borderC;padding:10px 15px 20px;margin-bottom:10px;}
+            a {text-transform: none;
               span{padding:5px;color:$bgC_footer;background: $txtC_footerIcons;border-radius:4px;}
             }
           }

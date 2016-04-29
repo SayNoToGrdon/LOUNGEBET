@@ -91,14 +91,12 @@ $spC_inlineHockey : #ffcb78;
 $bgC_body : #e6e5dc;
 $bgC_base : #105b63;
 $bgC_baseDark : #0e5259;
-$bgC_event_active : #1c89b0;
-$bgC_moduleTab_active : #1c89b0;
-$bgC_moduleTab : #f3f2e9;
-$bgC_orangeBtn : #ff8067; /* also border of active tabs */
+$bgC_event_active : #1c89b0; /* + bgC_moduleTab_active */
+$bgC_moduleTab : #f3f2e9; /* + bgC_titleBtn */
+$bgC_orangeBtn : #ff8067; /* also border of active tabs + current score + txtC_menu_hover*/
 $bgC_orangeBtn_hover : #e6735c;
 $bgC_greenBtn : #468966;
 $bgC_greenBtn_hover : #397054;
-$bgC_titleBtn : #f3f2e9;
 $bgC_titleBtn_hover : #f2f0e1;
 $bgC_titleMarket : #ede6d6;
 $bgC_titleMarket_active : #e6dac1;
@@ -116,7 +114,6 @@ $bgC_footer : #dfd8c7;
 $bgC_footerPayment : #dbd3c1;
 
 $txtC_menu : #ffffff; /* + submenu */
-$txtC_menu_hover : #ff8067; /* + current score */
 $txtC_basic : #303838;
 $txtC_currentTime : #44983d;
 $txtC_mainRed : #ca5555;

@@ -1,4 +1,9 @@
 /*----------------------------*/
-/* LEFT SIDEBAR FOR PRE-MATCH */
+/* GENERAL STYLES FOR MODULES */
 /*----------------------------*/
-.leftSidebar{min-width: 50px;width:236px;background-color:green}
+
+.module{background: transparent;
+  .header, .title{background-color:$bgC_base; color:$bgC_base;}
+  .header{border-radius:4px;}
+  .title{border-radius:4px 4px 0 0 ;}
+}
