@@ -30,12 +30,12 @@
 <header>
     <div class="container">
         <div class="row gutters row-cols-6">
-            <div class="cell-1of4 to-vertical-center">
+            <div class="cell-1of4 row to-vertical-center">
                 <div class="cell">
                     <a href="#"><h1 class="logo">Loungebet</h1></a>
                 </div>
             </div>
-            <nav class="cell-auto">
+            <nav class="cell-auto main-menu">
                 <ul class="cell">
                     <li><a href="#" class="active">Sports</a></li>
                     <li><a href="#">Pools</a></li>
@@ -46,28 +46,35 @@
                     <li><a href="#">financials</a></li>
                 </ul>
             </nav>
-            <div class="cell-1of3 to-right">
-                <div class="cell">
-
-
-
-                    <div class="accountInfo">
-                        <a href="#" class="btn-green btn-s">deposite</a>
+            <div class="cell-1of3 row to-right">
+                <div class="row loggedIn">
+                    <div class="accountInfo cell row-cell-items">
+                        <span class="position-wrap">
+                            <svg height="60" width="60">
+                                <circle cx="30" cy="30" r="25" />
+                                <circle id="progressPath" cx="30" cy="30" r="25"  />
+                            </svg>
+                            <span class="userLvl">10</span>
+                            <figure class="avatar">
+                                <img src="_/img/temp/avatar.png" alt="">
+                            </figure>
+                        </span>
                     </div>
-                    <div class="accountInfo">
+
+                    <div class="accountInfo cell row-cell-items">
                         <span class="ballance">$90.00</span>
                     </div>
-                    <div class="accountInfo">
-                        <svg height="60" width="60">
-                            <circle cx="30" cy="30" r="25" />
-                            <circle id="progressPath" cx="30" cy="30" r="25"  />
-                        </svg>
-                        <span class="userLvl">10</span>
-                        <figure class="avatar">
-                            <img src="_/img/temp/avatar.png" alt="">
-                        </figure>
+                    <div class="accountInfo cell row-cell-items">
+                        <a href="#" class="btn-green btn-s">deposite</a>
                     </div>
-
+                </div>
+                <div class="row loggedOut">
+                    <div class="row-cell-items">
+                        <a href="#" class="btn-transparant btn-s">login</a>
+                    </div>
+                    <div class="row-cell-items">
+                        <a href="#" class="btn-orange btn-s">join now</a>
+                    </div>
                 </div>
             </div>
         </div>

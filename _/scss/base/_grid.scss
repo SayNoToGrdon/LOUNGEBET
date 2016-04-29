@@ -24,6 +24,15 @@
 	// width: 236px;
 }
 
+.row-cell-items{
+	align-items: center;
+	display: flex;
+}
+
+.row-cell-self{
+	align-self: center;
+	display: flex;
+}
 /* With gutters*/
 $gutter: 1em;
 .gutters {

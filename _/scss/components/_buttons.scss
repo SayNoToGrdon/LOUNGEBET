@@ -3,3 +3,15 @@
 .btn-m{ @include btn(16px, 0 30px, 36px); }
 .btn-l{ @include btn(18px, 0 32px, 40px); }
 .btn-xl{ @include btn(20px, 0 36px, 46px); }
+
+.btn-green{ background: $bgC_greenBtn; border: solid 1px $bgC_greenBtn;
+  &:hover{ background: $bgC_greenBtn_hover; border-color:$bgC_greenBtn_hover;}
+}
+
+.btn-orange{ background: $bgC_orangeBtn; border: solid 1px $bgC_orangeBtn;
+  &:hover{ background: $bgC_orangeBtn_hover; border-color:$bgC_orangeBtn_hover;}
+}
+
+.btn-transparant{ border: solid 1px $txtC_menu;
+  &:hover{ background: $bgC_greenBtn; border-color:$bgC_greenBtn;}
+}
