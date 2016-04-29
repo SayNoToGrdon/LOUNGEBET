@@ -14,7 +14,7 @@
 	display: flex;
 	display: -webkit-flex;
 	flex-flow: row;
-	flex-wrap: wrap;
+	// flex-wrap: wrap;
 }
 .u-textCenter {
 	text-align: center;
@@ -219,3 +219,5 @@ $gutter: 1em;
 .cell-1of12{width: calc(100%/12)}
 .cell-auto{flex: auto;}
 
+.rightSidebar{min-width: 320px;background-color:blue}
+.leftSidebar{min-width: 50px;width:236px;background-color:green}

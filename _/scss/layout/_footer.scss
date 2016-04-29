@@ -1,16 +1,35 @@
 footer {clear:both;min-height:50px;background:$bgC_footer;
-	.paymentsMethods{background:$bgC_footerPayment;
-		a{font-size: 48px; color:$txtC_paymentIcons;}
+	.paymentsMethods{background:$bgC_footerPayment;display: flex;
+      .container{padding-bottom: 0;padding-top: 0;
+        a{font-size: 48px; color:$txtC_footerIcons;}
+      }
 	}
 	.navigation{
-		a{font-size: 13px; line-height: 18px;
-          &:hover{
-              
+      ul{
+        li{color:$bgC_base;font-size:15px;line-height:24px;text-transform:capitalize;font-weight: 700;
+          a{font-size:13px;color:$txtC_basic;font-weight: 400;
+            &:hover{opacity: 0.5;}
           }
-		}
+        }
+        &.socialIcons{flex:1 0 10%;
+          li{text-align: center;line-height: 18px;
+            &:first-child{border-bottom: 1px solid $borderC;padding:0 15px 25px;margin-bottom:10px;}
+            a {
+              span{padding:5px;color: $txtC_menu;background: $txtC_footerIcons;border-radius:4px;}
+            }
+          }
+        }
+      }
 	}
-	.container {
-
-	}
-	.footer{background: $bgC_base;}
+	.container {padding: 10px 65px;}
+    .license{
+      p{flex-wrap: wrap;padding:15px 20px 5px 0;}
+    }
+    .footer-logo{order:2;padding-top:15px;padding-bottom: 5px;}
+    .footer {background: $bgC_base;
+      a, span {color: $txtC_menu;display:block;}
+      a{padding:0 1.5em;text-transform: uppercase;font-weight: 500;
+        &:hover{opacity: 0.5;}
+      }
+    }
 }
