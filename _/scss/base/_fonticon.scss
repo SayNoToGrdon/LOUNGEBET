@@ -1,16 +1,16 @@
 // Custom Fonts
 // Social Icons
 @font-face {
-    font-family: 'socicon';
-    src: url('../fonts/socicon.eot');
-    src: url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/socicon.woff') format('woff'),
-         url('../fonts/socicon.woff2') format('woff2'),
-         url('../fonts/socicon.ttf') format('truetype'),
-         url('../fonts/socicon.svg#sociconregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    text-transform: initial;
+  font-family: 'socicon';
+  src: url('../fonts/socicon.eot');
+  src: url('../fonts/socicon.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/socicon.woff') format('woff'),
+  url('../fonts/socicon.woff2') format('woff2'),
+  url('../fonts/socicon.ttf') format('truetype'),
+  url('../fonts/socicon.svg#sociconregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  text-transform: initial;
 }
 .socialIcons [class^="socicon-"], .socialIcons [class*=" socicon-"] { /* Change to your class name, eg: icon, socicon, social... */
   font-family: 'socicon'; 
@@ -26,7 +26,7 @@
   -webkit-font-smoothing: antialiased;
 }
 .socicon:empty{
-    width: 1em;
+  width: 1em;
 }
 .socicon-twitter:before {content: "\e040";}
 .socicon-facebook:before {content: "\e041";}
@@ -192,34 +192,38 @@ i:before{
   font-style: normal;
 }
 .icon-envelope:before {
-    content: "\e906";
+  content: "\e906";
+  position: relative;
+  top: 3px;
 }
 .icon-support_circle:before {
-    content: "\e907";
+  content: "\e907";
+  position: relative;
+  top: 3px;
 }
 .icon-resize_to_small:before {
-    content: "\e90a";
+  content: "\e90a";
 }
 .icon-resize_to_big:before {
-    content: "\e90b";
+  content: "\e90b";
 }
 .icon-lock_closed:before {
-    content: "\e904";
+  content: "\e904";
 }
 .icon-lock_opened:before {
-    content: "\e905";
+  content: "\e905";
 }
 .icon-match_live:before {
-    content: "\e903";
+  content: "\e903";
 }
 .icon-cash_out:before {
-    content: "\e902";
+  content: "\e902";
 }
 .icon-top_league:before {
-    content: "\e901";
+  content: "\e901";
 }
 .icon-outright:before {
-    content: "\e900";
+  content: "\e900";
 }
 .icon-full_screen:before {
   content: "\61";
@@ -254,7 +258,7 @@ i:before{
 .icon-live_stream .path2,
 .icon-statistics .path2,
 .icon-statistics .path3{
-    right: 0;
+  right: 0;
 }
 .icon-statistics .path1:before {
   content: "\66";
@@ -393,39 +397,39 @@ i:before{
 
 /*Payments methods icons*/
 @font-face {
-    font-family: 'Payment-Methods';
-    src:    url('../fonts/Payment-Methods.eot?3uv7ob');
-    src:    url('../fonts/Payment-Methods.eot?3uv7ob#iefix') format('embedded-opentype'),
-        url('../fonts/Payment-Methods.ttf?3uv7ob') format('truetype'),
-        url('../fonts/Payment-Methods.woff?3uv7ob') format('woff'),
-        url('../fonts/Payment-Methods.svg?3uv7ob#Payment-Methods') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Payment-Methods';
+  src:    url('../fonts/Payment-Methods.eot?3uv7ob');
+  src:    url('../fonts/Payment-Methods.eot?3uv7ob#iefix') format('embedded-opentype'),
+  url('../fonts/Payment-Methods.ttf?3uv7ob') format('truetype'),
+  url('../fonts/Payment-Methods.woff?3uv7ob') format('woff'),
+  url('../fonts/Payment-Methods.svg?3uv7ob#Payment-Methods') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .paymentsMethods [class^="icon-"], .paymentsMethods [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
     font-family: 'Payment-Methods';   
-}
+  }
 
-.icon-master_card:before {
+  .icon-master_card:before {
     content: "\e904";
-}
-.icon-mastercard_securecode:before {
+  }
+  .icon-mastercard_securecode:before {
     content: "\e905";
-}
-.icon-maestro:before {
+  }
+  .icon-maestro:before {
     content: "\e906";
-}
-.icon-visa_electron:before {
+  }
+  .icon-visa_electron:before {
     content: "\e903";
-}
-.icon-verified_by_visa:before {
+  }
+  .icon-verified_by_visa:before {
     content: "\e902";
-}
-.icon-Visa:before {
+  }
+  .icon-Visa:before {
     content: "\e901";
-}
-.icon-moneybookers:before {
+  }
+  .icon-moneybookers:before {
     content: "\e900";
-}
+  }
