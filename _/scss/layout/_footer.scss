@@ -1,6 +1,6 @@
 footer {clear:both;min-height:50px;background:$bgC_footer;
-	.paymentsMethods{background:$bgC_footerPayment;display: flex;
-      .container{padding-bottom: 0;padding-top: 0;
+	.paymentsMethods{background:$bgC_footerPayment;
+      &.container{padding-bottom: 0;padding-top: 0;
         a{font-size: 48px; color:$txtC_footerIcons;}
       }
 	}
@@ -12,10 +12,10 @@ footer {clear:both;min-height:50px;background:$bgC_footer;
           }
         }
         &.socialIcons{flex:1 0 10%;
-          li{text-align: center;line-height: 18px;
+          li{text-align: center;line-height:18px;white-space: nowrap;
             &:first-child{border-bottom: 1px solid $borderC;padding:0 15px 25px;margin-bottom:10px;}
             a {
-              span{padding:5px;color: $txtC_menu;background: $txtC_footerIcons;border-radius:4px;}
+              span{padding:5px;color:$bgC_footer;background: $txtC_footerIcons;border-radius:4px;}
             }
           }
         }
@@ -28,7 +28,7 @@ footer {clear:both;min-height:50px;background:$bgC_footer;
     .footer-logo{order:2;padding-top:15px;padding-bottom: 5px;}
     .footer {background: $bgC_base;
       a, span {color: $txtC_menu;display:block;}
-      a{padding:0 1.5em;text-transform: uppercase;font-weight: 500;
+      a{padding:0 1.5em;white-space: nowrap;text-transform: uppercase;font-weight: 500;
         &:hover{opacity: 0.5;}
       }
     }

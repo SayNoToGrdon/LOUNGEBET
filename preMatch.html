@@ -30,13 +30,12 @@
 <header>
     <div class="container">
         <div class="row gutters row-cols-6">
-            <div class="cell-1of4">
-
+            <div class="cell-1of4 row to-vertical-center">
                 <div class="cell">
-                    <a href="#">Loungebet left</a>
+                    <a href="#"><h1 class="logo">Loungebet</h1></a>
                 </div>
             </div>
-            <nav class="cell-auto">
+            <nav class="cell-auto main-menu">
                 <ul class="cell">
                     <li><a href="#" class="active">Sports</a></li>
                     <li><a href="#">Pools</a></li>
@@ -47,17 +46,70 @@
                     <li><a href="#">financials</a></li>
                 </ul>
             </nav>
-            <div class="cell-1of3 to-right">
-                <div class="cell">
+            <div class="cell-1of3 row to-right">
+                <div class="row loggedIn">
+                    <div class="accountInfo cell row-cell-items">
+                        <span class="position-wrap">
+                            <svg height="60" width="60">
+                                <circle cx="30" cy="30" r="25" />
+                                <circle id="progressPath" cx="30" cy="30" r="25"  />
+                            </svg>
+                            <span class="userLvl">10</span>
+                            <figure class="avatar">
+                                <img src="_/img/temp/avatar.png" alt="">
+                            </figure>
+                        </span>
+                    </div>
 
-                    <a href="#">Loungebet-right</a>
-
+                    <div class="accountInfo cell row-cell-items">
+                        <span class="ballance">$90.00</span>
+                    </div>
+                    <div class="accountInfo cell row-cell-items">
+                        <a href="#" class="btn-green btn-s">deposite</a>
+                    </div>
                 </div>
-
+                <div class="row loggedOut">
+                    <div class="row-cell-items">
+                        <a href="#" class="btn-transparant btn-s">login</a>
+                    </div>
+                    <div class="row-cell-items">
+                        <a href="#" class="btn-orange btn-s">join now</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
+    <div class="subNav">
+        <div class="container">
+            <div class="row gutters row-cols-6">
+                <div class="cell-1of4 to-vertical-center">
+                    <div class="cell">
+                        <span class="timeZone">01:23:54  GMT+1<i class="icon-arrow_down"></i></span>
+                    </div>
+                </div>
+                <nav class="cell-auto to-bottom row">
+                    <ul class="cell">
+                        <li><a href="#" class="active">Pre-Match</a></li>
+                        <li><a href="#">Live <span>In-Play</span></a></li>
+                        <li><a href="#">Virtual</a></li>
+                        <li><a href="#">Racing</a></li>
+                        <li><a href="#">E-sports</a></li>
+                    </ul>
+                </nav>
+                <div class="cell-1of3 to-right">
+                    <div class="cell">
+                        <div class="details">
+                            <span class="items icon-settings"></span>
+                            <span class="items icon-speaker"></span>
+                            <span class="items icon-help"></span>
+                            <span class="items icon-support"></span>
+                            <span class="items icon-full_screen"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <section class="row row-cols-6">
     <aside class="cell-1of6 leftSidebar">
@@ -98,11 +150,11 @@
                 <ul class="cell socialIcons">
                     <li class="row row-fit">
                     <a href="#" class="cell-auto"><span class="socicon-googleplus"></span></a>
-                    <a href="#" class="cell-auto"><span class="socicon-googleplus"></span></a>
-                    <a href="#" class="cell-auto"><span class="socicon-googleplus"></span></a>
-                    <a href="#" class="cell-auto"><span class="socicon-googleplus"></span></a>
-                    <a href="#" class="cell-auto"><span class="socicon-googleplus"></span></a>
-                    <a href="#" class="cell-auto"><span class="socicon-googleplus"></span></a>
+                    <a href="#" class="cell-auto"><span class="socicon-facebook"></span></a>
+                    <a href="#" class="cell-auto"><span class="socicon-instagram"></span></a>
+                    <a href="#" class="cell-auto"><span class="socicon-twitter"></span></a>
+                    <a href="#" class="cell-auto"><span class="socicon-youtube"></span></a>
+                    <a href="#" class="cell-auto"><span class="socicon-linkedin"></span></a>
 
                     </li>
 
@@ -112,8 +164,8 @@
                 </ul>
             </div>
         </div>
-        <div class="paymentsMethods ">
-            <div class="container row row-fit">
+        <div class="paymentsMethods container">
+            <div class="row row-fit">
                 <a href="#" class="cell icon-master_card"></a>
                 <a href="#" class="cell icon-mastercard_securecode"></a>
                 <a href="#" class="cell icon-maestro"></a>
@@ -151,13 +203,13 @@
                 <div class="cell-1of3">
                     <span>&copy; 2016 Loungebet</span>
                 </div>
-                <div class="cell-auto">
-                    <ul class="row to-right">
-                        <li class=""><a href="#">About us</a></li>
-                        <li class=""><a href="#">Promotions</a></li>
-                        <li class=""><a href="#">Affilation</a></li>
-                        <li class=""><a href="#">News</a></li>
-                        <li class=""><a href="#">Contact</a></li>
+                <div class="cell-auto row to-right">
+                    <ul class="row">
+                        <li class="cell"><a href="#">About us</a></li>
+                        <li class="cell"><a href="#">Promotions</a></li>
+                        <li class="cell"><a href="#">Affilation</a></li>
+                        <li class="cell"><a href="#">News</a></li>
+                        <li class="cell"><a href="#">Contact</a></li>
                     </ul>
                 </div>
             </div>
