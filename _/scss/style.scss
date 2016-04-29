@@ -18,6 +18,8 @@
 // Layouts
 @import "layout/header";
 @import "layout/footer";
+@import "layout/sidebar";
+@import "layout/sidebarRight";
 //@import "layout/lightbox";
 
 // Themes
@@ -29,6 +31,7 @@
 
 // Components
 @import "components/buttons";
+@import "components/module";
 //@import "components/dropdown";
 //@import "components/language";
 

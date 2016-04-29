@@ -227,7 +227,3 @@ $gutter: 1em;
 .cell-1of12{width: calc(100%/12)}
 .cell-auto{flex: auto;}
 
-.rightSidebar{flex: 1 calc(25% - #{$gutter});}
-	// min-width:16.75%; max-width:16.75%;background-color:blue}
-.leftSidebar{min-width: 50px;width:236px;background-color:green}
-.footer-logo{min-width:13%;max-width: 13%; }
