@@ -11,9 +11,6 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 				&:last-child{margin-right:0;}
 			}
 		}
-		&.main-menu{
-			ul{margin-top:18px;margin-bottom: 5px;}
-		}
 	}
 	//svg circle
 	.accountInfo { position: relative;margin: 0 10px;
@@ -50,5 +47,8 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 		.details{text-align: right;cursor: default;
 			.items{display:inline-block; text-align:center; cursor: pointer; padding:11px;text-align: center;border-left:solid 1px $borderC_headerDark;opacity:0.8;color:$txtC_menu;}
 		}
+	}
+	.loggedOut{ padding: 20px 0;
+		.btn-s{ margin-left:10px;}
 	}
 }

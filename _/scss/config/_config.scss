@@ -181,3 +181,8 @@ $x5: 2s;
 body{ margin:0;padding:0;background:$bgC_body; }
 a {text-decoration: none;transition:$x1 all;}
 a:focus{outline: none;}
+
+//************************//
+//    General Classes     //
+//************************//
+.hide{ display:none }
