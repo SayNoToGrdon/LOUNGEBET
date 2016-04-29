@@ -1,4 +1,6 @@
-/*----------------------------*/
-/* LEFT SIDEBAR FOR PRE-MATCH */
-/*----------------------------*/
-.leftSidebar{min-width: 50px;width:236px;background-color:green}
+.module{
+  width: 100%;
+  background: $bgC_odds;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0px $borderC_module;
+}
