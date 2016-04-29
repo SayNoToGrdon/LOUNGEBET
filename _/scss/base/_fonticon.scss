@@ -191,6 +191,36 @@ i:before{
   content: '';
   font-style: normal;
 }
+.icon-envelope:before {
+    content: "\e906";
+}
+.icon-support_circle:before {
+    content: "\e907";
+}
+.icon-resize_to_small:before {
+    content: "\e90a";
+}
+.icon-resize_to_big:before {
+    content: "\e90b";
+}
+.icon-lock_closed:before {
+    content: "\e904";
+}
+.icon-lock_opened:before {
+    content: "\e905";
+}
+.icon-match_live:before {
+    content: "\e903";
+}
+.icon-cash_out:before {
+    content: "\e902";
+}
+.icon-top_league:before {
+    content: "\e901";
+}
+.icon-outright:before {
+    content: "\e900";
+}
 .icon-full_screen:before {
   content: "\61";
 }
@@ -327,7 +357,6 @@ i:before{
 .icon-X2:before {
   content: "\37";
 }
-
 .icon-live_stream .path1:before {
   content: "\38";
   color: rgb(0, 0, 0);
