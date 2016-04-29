@@ -2,6 +2,13 @@ footer {clear:both;min-height:50px;background:$bgC_footer;
 	.paymentsMethods{background:$bgC_footerPayment;
 		a{font-size: 48px; color:$txtC_paymentIcons;}
 	}
+	.navigation{
+		a{font-size: 13px; line-height: 18px;
+          &:hover{
+              
+          }
+		}
+	}
 	.container {
 
 	}
