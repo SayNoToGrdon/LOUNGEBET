@@ -5,8 +5,8 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 		ul{margin:0;padding:0;
 			li{ display:inline;height:100%;margin-right:8px;
 				a{display:inline-block;padding: 9px 1.73636363636%;height:100%;line-height:100%;position:relative;font-size:13px;color: $txtC_menu;font-weight:500;
-					&:hover{color:$txtC_menu_hover}
-					&.active{background: $bgC_baseDark; color:$txtC_menu_hover; @include activeItem();}
+					&:hover{color:$bgC_orangeBtn;}
+					&.active{background: $bgC_baseDark; color:$bgC_orangeBtn; @include activeItem();}
 				}
 				&:last-child{margin-right:0;}
 			}
@@ -17,7 +17,7 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 	.accountInfo { position: relative;margin: 0 10px;
 		svg {transform: rotate(199deg); height:60px; width:60px;margin-top: 3px;
 			circle{ stroke: $txtC_menu; stroke-width: 3;stroke-dasharray: 146.9; stroke-dashoffset: 300; stroke-opacity: 0.4; fill: transparent;
-				&#progressPath{stroke: $txtC_menu_hover; stroke-dasharray: 565.48; stroke-dashoffset: 452; stroke-opacity: 1;}
+				&#progressPath{stroke:$bgC_orangeBtn; stroke-dasharray: 565.48; stroke-dashoffset: 452; stroke-opacity: 1;}
 			}
 		}
 		.position-wrap{position: relative;}
@@ -35,7 +35,7 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 		.container{min-height: inherit;}
 		li{
 			a{font-size:12px;margin-top:0;text-transform:capitalize;padding: 11px 1.73636363636%;opacity:0.8;color:$txtC_menu;
-				span{color:$txtC_menu_hover;}
+				span{color:$bgC_orangeBtn;}
 				&:hover{opacity:1; color:$txtC_menu}
 				&.active{opacity:1;color:$txtC_menu;box-shadow: none;border: none;position:relative;
 					&:before{ content: "";position: absolute;display: block;width: 0;height: 0;border-left: 5px solid transparent;border-right: 5px solid transparent;border-bottom: 5px solid $bgC_body;left: 40%;bottom: 0;}
