@@ -13,6 +13,24 @@ header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relat
 			}
 		}
 	}
+	.cell-1of3{text-align: right;
+
+	}
+	//svg circle
+	.accountInfo { position: relative;float: right;margin: 0 10px;
+		svg {transform: rotate(199deg); height:60px; width:60px;margin-top: 3px;
+			circle{ stroke: $txtC_menu; stroke-width: 3;stroke-dasharray: 146.9; stroke-dashoffset: 300; stroke-opacity: 0.4; fill: transparent;
+				&#progressPath{stroke: $txtC_menu_hover; stroke-dasharray: 565.48; stroke-dashoffset: 452; stroke-opacity: 1;}
+			}
+		}
+		.userLvl { position: absolute; color:$txtC_menu; font-size:10px;left:-2px; top:23px;letter-spacing: 1px;cursor: default;}
+		.avatar{ position: absolute; top: 18px; left: 15px;
+			img{ width:30px; height:30px; border-radius: 50%;}
+		}
+		&:after{content:"";width: 1px; height: 30px;  position: absolute;top: 0; right: -10px; border-right: solid 1px red;}
+		.btn-green{background: $bgC_greenBtn;}
+		&:first-child:after{display:none;}
+	}
 	// Second row
 	.subNav{ width:100%;position:relative;background: $bgC_baseDark;border-top: solid 1px $borderC_headerDark;
 		.container{min-height: inherit;}
