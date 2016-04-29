@@ -1,35 +1,36 @@
 header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relative;border-top: solid 1px $borderC_header;
 	.row{flex-wrap: nowrap;}
-	.container{min-height:67px;}
-	.logo{background:url(../img/logo.png) no-repeat;width:178px;height:42px;margin:12px 0 0 10px;text-indent:-9999px;overflow:hidden;}
-	nav{text-align:center;text-transform:uppercase;
+	.logo{background:url(../img/logo.png) no-repeat;width:178px;height:42px;text-indent:-9999px;overflow:hidden;}
+	nav{ text-align:center;text-transform:uppercase;
 		ul{margin:0;padding:0;
 			li{ display:inline;height:100%;margin-right:8px;
-				a{display:inline-block;padding: 9px 1.73636363636%;margin-top:18px;height:100%;line-height:100%;position:relative;font-size:13px;color: $txtC_menu;font-weight:500;
+				a{display:inline-block;padding: 9px 1.73636363636%;height:100%;line-height:100%;position:relative;font-size:13px;color: $txtC_menu;font-weight:500;
 					&:hover{color:$txtC_menu_hover}
 					&.active{background: $bgC_baseDark; color:$txtC_menu_hover; @include activeItem();}
 				}
 				&:last-child{margin-right:0;}
 			}
 		}
-	}
-	.cell-1of3{text-align: right;
-
+		&.main-menu{
+			ul{margin-top:18px;margin-bottom: 5px;}
+		}
 	}
 	//svg circle
-	.accountInfo { position: relative;float: right;margin: 0 10px;
+	.accountInfo { position: relative;margin: 0 10px;
 		svg {transform: rotate(199deg); height:60px; width:60px;margin-top: 3px;
 			circle{ stroke: $txtC_menu; stroke-width: 3;stroke-dasharray: 146.9; stroke-dashoffset: 300; stroke-opacity: 0.4; fill: transparent;
 				&#progressPath{stroke: $txtC_menu_hover; stroke-dasharray: 565.48; stroke-dashoffset: 452; stroke-opacity: 1;}
 			}
 		}
+		.position-wrap{position: relative;}
 		.userLvl { position: absolute; color:$txtC_menu; font-size:10px;left:-2px; top:23px;letter-spacing: 1px;cursor: default;}
 		.avatar{ position: absolute; top: 18px; left: 15px;
 			img{ width:30px; height:30px; border-radius: 50%;}
 		}
-		&:after{content:"";width: 1px; height: 30px;  position: absolute;top: 0; right: -10px; border-right: solid 1px red;}
-		.btn-green{background: $bgC_greenBtn;}
-		&:first-child:after{display:none;}
+		&:after{content:"";width: 1px; height: 50%;  position: absolute;top: 26%; right: -10px; border-right: solid 1px #979797; opacity:0.5;}
+		&:last-child:after{display:none;}
+		&.cell{padding:0;}
+		.ballance{ padding:0 8px; color:$txtC_menu;font-size:14px;cursor:default;}
 	}
 	// Second row
 	.subNav{ width:100%;position:relative;background: $bgC_baseDark;border-top: solid 1px $borderC_headerDark;
