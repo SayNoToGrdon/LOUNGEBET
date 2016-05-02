@@ -15,7 +15,7 @@
     nav{font-size:13px;text-transform:capitalize;
       ul{ flex-wrap: nowrap;
         li{ float:left;height:100%;
-          a{ border: solid 1px $borderC_module; font-weight:500; border-top: none; border-left:none;display:inline-block;width:100%;padding:15px 0;text-align:center;line-height:100%;position:relative;background:$bgC_moduleTab;color:$txtC_basic_rbga;
+          a{ border: solid 1px $borderC_module; font-weight:500; border-top: none; border-left:none;display:inline-block;width:100%;padding:15px 0;text-align:center;line-height:100%;position:relative;background:$bgC_moduleTab;color:$txtC_basic_rbga08;
             &:hover{background:$bgC_odds;color:$txtC_basic;}
           }
           a.active{border:none;background:$bgC_odds;color:$txtC_basic;

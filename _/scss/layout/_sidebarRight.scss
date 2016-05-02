@@ -17,8 +17,9 @@
         .bottom{ position: absolute; bottom: 37px;width: 100%;text-align: center;}
       }
     }
-    .collapse{width:100%;float: left;padding: 0 10px 0 10px;
+    .collapse{width:100%;float: left;padding: 0 10px 0 10px;position: relative;
       a{display: block;padding: 18px 0;text-align: center;font-size: 15px;font-weight: 500;color:$txtC_basic;background: $bgC_odds;}
+      &:before{content:"\69"; width:20px; height:20px;position: absolute;}
     }
   }
 }
