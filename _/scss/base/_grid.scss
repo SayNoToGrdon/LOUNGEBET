@@ -47,7 +47,10 @@ $gutter: 1em;
 		}
 	}
 }
-
+.main-container {
+	justify-content: space-between;
+	padding: 10px 10px 0 10px;
+}
 /* Justify per row*/
 .to-right {
 	justify-content: flex-end;
