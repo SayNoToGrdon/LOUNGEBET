@@ -230,3 +230,5 @@ $gutter: 1em;
 .cell-1of12{width: calc(100%/12)}
 .cell-auto{flex: auto;}
 
+//sidebars
+.rightSidebar{flex: 1 ;min-width: 320px; max-width:320px;}
