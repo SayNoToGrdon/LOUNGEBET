@@ -4,19 +4,18 @@
 .leftSidebar{min-width:236px;max-width: 236px; flex:1;
   .module{background: transparent;box-shadow: none;
     .module_body{
-      .event{padding:0 26px 0 10px;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;box-shadow:0 0 1px $borderC_module;
-        a{color:$txtC_basic;}
-        .liveStream{position:relative;padding-left: 10px;
-          &:after, &:before{content: '';font-family:'loungebet_icons';position:absolute;font-size:16px;}
-          &:after{content:'\38';}
-          &:before{content:'\39';}
+      .event{white-space:nowrap;padding:0 26px 0 10px;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;box-shadow:0 0 1px $borderC_module;
+        a{color:$txtC_basic;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;max-width: 185px;display: inline-block;}
+        .liveStream{position:relative;padding-left: 10px;color:$iconC_liveStream;font-family:'loungebet_icons';
+          &:after, &:before{content: '';position:absolute;font-size:16px;}
+          &:after{content:'\38';color:$iconC_liveStream;opacity: .7}
+          &:before{content:'\39';opacity: .3}
         }
       }
-
     }
-
-
   }
-
+}
+.soccer{border-color:$spC_soccer;
+  &:before{content:'';}
 }
 
