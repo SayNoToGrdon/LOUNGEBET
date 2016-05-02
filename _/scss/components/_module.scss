@@ -2,8 +2,12 @@
 /* GENERAL STYLES FOR MODULES */
 /*----------------------------*/
 
-//.module{ background: $bgC_odds; width: 100%; border-radius: 4px; box-shadow: 1px 1px 0px $borderC_module;
-//  .header, .title{background-color:$bgC_base; color:$txtC_menu;}
-//  .header{border-radius:4px;}
-//  .title{border-radius:4px 4px 0 0;}
-//}
+.module{ background: $bgC_odds; width: 100%; border-radius: 4px; box-shadow: 1px 1px 0 $borderC_module;margin-bottom: 5px;
+  .header, .title{background-color:$bgC_base;color:$txtC_menu;padding:0 26px 0 10px;min-height:35px;line-height:35px;text-transform:capitalize;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;position:relative;}
+  .header{border-radius:4px;margin: 5px 0;
+    &:after{content: '\31';width:13px;height:13px;font-size:13px;font-family:'loungebet_icons';position: absolute;right: 10px;}
+  }
+  &.empty.header:after{content: ''};
+  &.opened.header:after{content: '\7a'};
+  .title{border-radius:4px 4px 0 0;}
+}
