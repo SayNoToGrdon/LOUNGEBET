@@ -2,9 +2,32 @@
 /* GENERAL STYLES FOR MODULES */
 /*----------------------------*/
 
-.module{ background: $bgC_odds; width: 100%; border-radius: 4px; box-shadow: 1px 1px 0px $borderC_module;
-  .header, .title{background-color:$bgC_base; color:$txtC_menu; text-transform: capitalize;}
-  .header{border-radius:4px;}
+.module{ background: $bgC_odds; width: 100%; border-radius: 4px; box-shadow: 1px 1px 0 $borderC_module;margin-bottom: 5px;
+  .header, .title{background-color:$bgC_base;color:$txtC_menu;padding:0 26px 0 10px;min-height:35px;line-height:35px;text-transform:capitalize;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;position:relative;}
+  .header{border-radius:4px;margin: 5px 0;
+    &:after{content:'\31';width:13px;height:13px;font-size:13px;font-family:'loungebet_icons';position:absolute;right:10px;color:$txtC_btn;}
+  }
+  &.simple.header:after{content: ''};
+  &.opened.header:after{content: '\7a'};
   .title{border-radius:4px 4px 0 0;}
 
+  .subTabs{ width: 100%;
+    nav{font-size:13px;text-transform:capitalize;
+      ul{ flex-wrap: nowrap;
+        li{ float:left;height:100%;
+          a{ border: solid 1px $borderC_module; font-weight:500; border-top: none; border-left:none;display:inline-block;width:100%;padding:15px 0;text-align:center;line-height:100%;position:relative;background:$bgC_moduleTab;color:$txtC_basic_rbga;
+            &:hover{background:$bgC_odds;color:$txtC_basic;}
+          }
+          a.active{border:none;background:$bgC_odds;color:$txtC_basic;
+            &:before{border-top:4px solid $bgC_orangeBtn;content:"";position:absolute;top:0;width:101.5%;left:0;}
+          }
+          &:last-child{
+            a{border-right:0;}
+          }
+        }
+      }
+    }
+  }
+  .body{padding: 10px;}
 }
+
