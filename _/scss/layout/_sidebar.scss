@@ -1,5 +1,22 @@
 /*----------------------------*/
 /* LEFT SIDEBAR FOR PRE-MATCH */
 /*----------------------------*/
-.leftSidebar{min-width:236px;max-width: 236px; flex:1;}
+.leftSidebar{min-width:236px;max-width: 236px; flex:1;
+  .module{background: transparent;box-shadow: none;
+    .module_body{
+      .event{padding:0 26px 0 10px;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;box-shadow:0 0 1px $borderC_module;
+        a{color:$txtC_basic;}
+        .liveStream{position:relative;padding-left: 10px;
+          &:after, &:before{content: '';font-family:'loungebet_icons';position:absolute;font-size:16px;}
+          &:after{content:'\38';}
+          &:before{content:'\39';}
+        }
+      }
+
+    }
+
+
+  }
+
+}
 
