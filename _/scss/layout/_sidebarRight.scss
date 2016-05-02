@@ -4,5 +4,21 @@
 
 // mini games
 .mini-games{
-
+  .more{opacity:0.8; color:$txtC_menu;float: right;font-size:13px; font-weight:500;
+    &:hover{opacity:1;}
+  }
+  .module_body{
+    .slider_list{ position: relative; width:100%;float: left;padding: 10px 10px 0 10px;
+      li{ position: relative; height: 315px; width:100%;
+        figure{ height: 100%;overflow: hidden;float: left;width: 100%;}
+        .arrow_left, .arrow_right{ position: absolute;top: 0;height: inherit;width: 30px;cursor: pointer;}
+        .arrow_left{left:0;}
+        .arrow_right{right:0;}
+        .bottom{ position: absolute; bottom: 37px;width: 100%;text-align: center;}
+      }
+    }
+    .collapse{width:100%;float: left;padding: 0 10px 0 10px;
+      a{display: block;padding: 18px 0;text-align: center;font-size: 15px;font-weight: 500;color:$txtC_basic;background: $bgC_odds;}
+    }
+  }
 }

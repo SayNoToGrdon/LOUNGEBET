@@ -12,8 +12,13 @@
 // Media Query
 @import "media/media";
 
+
 // Config (colors, fonts)
 @import "config/config";
+
+// Components
+@import "components/buttons";
+@import "components/module";
 
 // Layouts
 @import "layout/header";
@@ -21,6 +26,7 @@
 @import "layout/sidebar";
 @import "layout/sidebarRight";
 //@import "layout/lightbox";
+
 
 
 // Themes
@@ -32,9 +38,6 @@
 
 
 
-// Components
-@import "components/buttons";
-@import "components/module";
 //@import "components/dropdown";
 //@import "components/language";
 

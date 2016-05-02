@@ -1,4 +1,4 @@
-header{width: 100%;background:$bgC_base;padding:0 0;display:block;position:relative;border-top: solid 1px $borderC_header;
+header{width: 100%; min-width: 1303px; background:$bgC_base; padding:0 0; display:block; position:relative;border-top: solid 1px $borderC_header;
 	.row{flex-wrap: nowrap;}
 	.logo{background:url(../img/logo.png) no-repeat;width:178px;height:42px;text-indent:-9999px;overflow:hidden;}
 	nav{ text-align:center;text-transform:uppercase;
