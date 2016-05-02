@@ -2,11 +2,11 @@
 /* LEFT SIDEBAR FOR PRE-MATCH */
 /*----------------------------*/
 .leftSidebar{min-width:236px;max-width: 236px; flex:1;
-  .module{background: transparent;box-shadow: none;
+  .module{background: transparent;border-bottom: none;
     .module_body{
-      .event{white-space:nowrap;padding:0 26px 0 10px;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;box-shadow:0 0 1px $borderC_module;
-        a{color:$txtC_basic;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;max-width: 185px;display: inline-block;}
-        .liveStream{position:relative;padding-left: 10px;color:$iconC_liveStream;font-family:'loungebet_icons';
+      .event{float:left;width:100%;white-space:nowrap;padding:0 26px 0 10px;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;border-bottom:1px solid $borderC_module;
+        a, span{color:$txtC_basic;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;max-width:185px;display:inline-block;float:left}
+        .liveStream{position:relative;padding-left: 10px;color:$iconC_liveStream;font-family:'loungebet_icons';float:left;
           &:after, &:before{content: '';position:absolute;font-size:16px;}
           &:after{content:'\38';color:$iconC_liveStream;opacity: .7}
           &:before{content:'\39';opacity: .3}
@@ -15,7 +15,28 @@
     }
   }
 }
-.soccer{border-color:$spC_soccer;
-  &:before{content:'';}
+.sportListItem{float:left; width:100%;
+  .header{position:relative;background-color:$bgC_moduleTab;color:$txtC_basic;
+    .sportHover{z-index:0;display:block;position:absolute;top:0;bottom:0;right:98.3%;left:0;transition:all $x1;}
+    .sportName{z-index:1; position: relative;}
+    &:hover{color:$txtC_menu;
+      .sportHover{right:0;}
+      &:after{content:"\31";color:$txtC_menu;}
+    }
+    &:before{content:"";font-family:'loungebet_icons'; }
+    &:after{content:"\31";color:$iconC_iconArrowDown;font-family:'loungebet_icons';transition:$x2;}
+  }
+}
+.soccer{
+  .header{
+    .sportHover{background-color:$spC_soccer;}
+    &:before {content: "\73";}
+  }
+}
+.tennis{
+  .header{
+    .sportHover{background-color:$spC_tennis;}
+    &:before {content: "\75";}
+  }
 }
 
