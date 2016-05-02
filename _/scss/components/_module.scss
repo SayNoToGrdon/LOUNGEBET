@@ -2,10 +2,10 @@
 /* GENERAL STYLES FOR MODULES */
 /*----------------------------*/
 
-.module{background: $bgC_odds;width: 100%;border-radius:4px;box-shadow:0 0 1px $borderC_module;margin-bottom: 5px;
+.module{background: $bgC_odds;width: 100%;border-radius:4px;border-bottom:1px solid $borderC_module;margin-bottom: 5px;
   .header, .title{background-color:$bgC_base;color:$txtC_menu;padding:0 26px 0 10px;min-height:35px;line-height:35px;text-transform:capitalize;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;position:relative;font-weight:500;}
   .title{border-radius:4px 4px 0 0; padding:0 10px;}
-  .header{border-radius:4px;margin: 5px 0;box-shadow:0 0 1px $txtC_basic_rgba02;
+  .header{border-radius:4px;margin: 5px 0;border-bottom:1px solid $txtC_basic_rgba02;
     &:after{content:'\31';width:13px;height:13px;font-size:13px;font-family:'loungebet_icons';position:absolute;right:10px;color:$txtC_btn;}
   }
   &.simple.header:after{content: ''};
