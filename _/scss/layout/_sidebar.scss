@@ -1,6 +1,8 @@
-/*----------------------------*/
-/* LEFT SIDEBAR FOR PRE-MATCH */
-/*----------------------------*/
+/*------------------------------*/
+/* LEFT SIDEBAR FOR LIVE INPLAY */
+/*------------------------------*/
+
+//general styles for all modules in leftsidebar
 .leftSidebar{min-width:236px;max-width: 236px; flex:1;
   .module{background: transparent;border-bottom: none;
     .module_body{
@@ -15,6 +17,8 @@
     }
   }
 }
+//styles for separate modules in leftsidebar
+.search{}
 .sportListItem{float:left; width:100%;
   .header{position:relative;background-color:$bgC_moduleTab;color:$txtC_basic;
     .sportHover{z-index:0;display:block;position:absolute;top:0;bottom:0;right:98.3%;left:0;transition:all $x1;}

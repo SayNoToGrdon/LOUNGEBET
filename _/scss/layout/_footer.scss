@@ -1,7 +1,7 @@
 footer {clear:both;min-height:50px;background:$bgC_footer;
 	.paymentsMethods{background:$bgC_footerPayment;
       &.container{padding-bottom: 0;padding-top: 0;
-        a{font-size: 48px; color:$txtC_footerIcons;}
+        a{font-size: 48px; color:$iconC_footer;}
       }
 	}
 	.navigation{
@@ -18,7 +18,7 @@ footer {clear:both;min-height:50px;background:$bgC_footer;
             }
             &:first-child{border-bottom: 1px solid $borderC;padding:10px 15px 20px;margin-bottom:10px;}
             a {text-transform: none;
-              span{padding:5px;color:$bgC_footer;background: $txtC_footerIcons;border-radius:4px;}
+              span{padding:5px;color:$bgC_footer;background:$iconC_footer;border-radius:4px;}
             }
           }
         }
