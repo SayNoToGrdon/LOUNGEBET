@@ -23,7 +23,7 @@
               .coef{float:right;}
               &.odds{float:left;background:$bgC_odds;
                 .teamName{color:$txtC_odd;}
-                .coef{color:$txtC_odd;}
+                .coef{color:$txtC_basic;}
                 &:hover{background:$bgC_odds_hover;}
               }
             }
