@@ -39,7 +39,7 @@
           }
         }
         .leagueName{color:$txtC_league;text-align:center;display:block;width:100%;border-top:1px solid $borderC_module;font-weight:500;}
-        .eventDetails{height:0;opacity:0;visibility:hidden;background:$bgC_openedEvent;width:100%;float:left;border-radius:4px;transition:all $x1 ;
+        .eventDetails{height:0;opacity:0;visibility:hidden;background:$bgC_openedEvent;width:100%;float:left;position:relative;border-radius:4px;transition:all $x1;
           ul{padding: 0 5px;
             li{border-radius:6px;padding:0 10px;border:1px solid $borderC_module;width:100%;float:left;box-sizing:border-box;margin-bottom:5px;
               .result{color:$bgC_orangeBtn;float:left;font-weight:700;font-size:15px;}
@@ -55,7 +55,9 @@
               }
             }
           }
-          .eventDisable{background:rgba(255,255,255,.3)}
+          .eventDisable{padding:0 5px;background: rgba(255, 255, 255, 0.4);position:absolute;top:30px;left:0;right:0;bottom:0;z-index:100;
+            span{background:$bgC_goal;line-height:30px;display:block;width:100%;border-radius:6px;border:1px solid $bgC_goal; color:$txtC_mainRed;font-size: 15px;font-weight: 700;text-align:center;}
+          }
         }
         &.opened{
           .eventDetails{height:auto;opacity:1;visibility:visible;}
