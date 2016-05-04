@@ -105,6 +105,7 @@ $bgC_odds_hover : #f5f1e6;
 $bgC_odds_active : #1ca1b0;
 $bgC_odds_inactive : #eeeee5;
 $bgC_openedEvent : #f5f4ec;
+$bgC_openedEvent_rgba04 : rgba(245,244,236,.4);
 $bgC_goal : #ffd34e;
 $bgC_tooltip : #689ec4;
 $bgC_tooltipGrey : #8f9193;
@@ -193,5 +194,5 @@ a:focus{outline: none;}
 //************************//
 //    General Classes     //
 //************************//
-.hide{ display: none; }
+.hide{ display: none!important; }
 .wrapper{ width:100%; float:left;}
