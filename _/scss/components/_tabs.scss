@@ -1,0 +1,18 @@
+.subTabs{ width: 100%;
+	nav{font-size:13px;text-transform:capitalize;
+		ul{ flex-wrap: nowrap;
+			li{ float:left;height:100%;overflow: hidden;
+				a{ border: solid 1px $borderC_module; font-weight:500; border-top: none; border-left:none;display:inline-block;width:100%;padding:15px 0;text-align:center;line-height:100%;position:relative;background:$bgC_moduleTab;color:$txtC_basic_rbga08;
+					&:hover{background:$bgC_odds;color:$txtC_basic;}
+					&:before{height:4px;background:$bgC_orangeBtn;content:"";position:absolute;top:0;width:101.5%;left:0;transform: translate3d(0,-101%,0);transition: all $x1;}
+				}
+				a.active{border:none;background:$bgC_odds;color:$txtC_basic;
+					&:before{transform: translate3d(0,0,0);transition: all $x1;}
+				}
+				&:last-child{
+					a{border-right:0;}
+				}
+			}
+		}
+	}
+}

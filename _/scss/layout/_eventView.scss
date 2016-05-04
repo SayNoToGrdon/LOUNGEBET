@@ -1,0 +1,14 @@
+.eventView{
+	.subTabs.content{ background: $bgC_moduleTab;border-bottom: solid 1px $borderC_module;
+		li{ width: 12.1212121212%;
+			&:last-child{
+				 a{border-right: solid 1px $borderC_module;}
+			 }
+			a{border-bottom: 0;
+				&.active{
+					&:after{ content:""; border-bottom: solid 1px $bgC_odds; height: 1px; width:100%;position: absolute; left: 0; bottom: 0;}
+				}
+			}
+		}
+	}
+}
