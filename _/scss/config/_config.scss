@@ -196,3 +196,22 @@ a:focus{outline: none;}
 //************************//
 .hide{ display: none!important; }
 .wrapper{ width:100%; float:left;}
+
+//*******************************//
+//   Classes for sport Icons    //
+//*****************************//
+
+.soccer, .tennis, .basketball, .volleyball, .hockey, .baseball, .rugby, .handball, .snooker, .moto, .formula{
+	&:before{content:'';display:block;float:left;width:20px;height:20px; background:url('../img/icons/sports.png') no-repeat 0px 0px;}
+}
+.soccer:before{background-position: 1px 2px;}
+.tennis:before{background-position: 1px -18px;}
+.basketball:before{background-position: 1px -37px;}
+.volleyball:before{background-position: 1px -58px;}
+.hockey:before{background-position: 1px -77px;}
+.baseball:before{background-position: 1px -97px;}
+.rugby:before{background-position: 1px -117px;}
+.handball:before{background-position: 1px -137px;}
+.snooker:before{background-position: 1px -157px;}
+.moto:before{background-position: 1px -177px;}
+.formula:before{background-position: 1px -195px;}
