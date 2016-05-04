@@ -15,9 +15,9 @@
         }
         .eventTitle{cursor:pointer;position:relative;width:100%;float:left;display:flex;
           .eventName{padding:0 10px;float:left;max-width:207px;transition:all $x1;}
-          .eventHover{position:relative;float:right;width:0;height:30px;opacity:0;visibility:hidden;display:flex;justify-content:flex-end;transition:width$x1,right $x2;
+          .eventHover{position:relative;float:right;width:0;height:30px;opacity:0;visibility:hidden;display:flex;justify-content:flex-end;transition:width $x2,right $x1;
             .icon-star{position: absolute;left:25px;height:30px;padding-top:8px;transition:all $x3;}
-            .icon-arrow_down{position:absolute;right:25px;height:30px;width:30px;padding-top:8px;border-left: 1px solid;transition:all $x3;}
+            .icon-arrow_down{position:absolute;right:25px;height:30px;width:30px;padding-top:8px;border-left: 1px solid;transition:all $x2;}
           }
           &.withIcon{
             .eventName{max-width:200px;}
@@ -55,17 +55,19 @@
               }
             }
           }
+          .eventDisable{background:rgba(255,255,255,.3)}
         }
         &.opened{
           .eventDetails{height:auto;opacity:1;visibility:visible;}
         }
         &.active{
           .eventTitle{
-            .eventHover{width:60px;opacity:.5;visibility:visible;right:0;
-              .icon-star{left:10px;padding-right: 7px;opacity: .5;
+            .eventHover{width:60px;opacity:1;visibility:visible;
+              &.withIcon{right:-10px;}
+              .icon-star{left:10px;padding-right:7px;opacity:.5;
                 &:hover{opacity: 1;}
               }
-              .icon-arrow_down{right:10px;padding-left:7px;opacity: .5;
+              .icon-arrow_down{right:0;padding-left:7px;opacity:.5;
                 &:hover{opacity: 1;}
               }
             }
