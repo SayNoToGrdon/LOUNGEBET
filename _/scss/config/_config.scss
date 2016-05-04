@@ -112,6 +112,8 @@ $bgC_dropdown : #f1f0e5;
 $bgC_dropdown_hover : #f7ecca;
 $bgC_footer : #dfd8c7;
 $bgC_footerPayment : #dbd3c1;
+$bgC_inputInactive : #d4d4d4;
+$bgC_inputActive : #52a178;
 
 $txtC_menu : #ffffff; /* + submenu */
 $txtC_basic : #303838;
@@ -192,3 +194,4 @@ a:focus{outline: none;}
 //    General Classes     //
 //************************//
 .hide{ display: none; }
+.wrapper{ width:100%; float:left;}

@@ -13,9 +13,16 @@
 // Config (colors, fonts)
 @import "config/config";
 
+
+
+
+
 // Components
 @import "components/buttons";
 @import "components/module";
+
+
+
 
 // Layouts
 @import "layout/header";
@@ -23,6 +30,9 @@
 @import "layout/sidebar";
 @import "layout/sidebarRight";
 //@import "layout/lightbox";
+
+
+
 
 // Themes
 //@import "themes/theme";
@@ -42,6 +52,7 @@
 //@import "components/menutabs";
 //@import "components/_toggle";
 
+
 // Vendors
 //@import "vendors/slick.scss";
 //@import "vendors/fancybox";
@@ -49,6 +60,7 @@
 //@import 'vendors/flag-icon-base';
 //@import 'vendors/flag-icon-list';
 //@import 'vendors/_jquery-ui';
+
 
 // @import "pages/home";
 //@import "pages/registration";
@@ -59,3 +71,5 @@
 //@import "pages/promotions";
 //@import "pages/promotions-casino-view";
 //@import "pages/footer-lightbox";
+
+
