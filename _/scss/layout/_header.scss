@@ -1,8 +1,9 @@
 header{width: 100%; min-width: 1303px; background:$bgC_base; padding:0 0; display:block; position:relative;border-top: solid 1px $borderC_header;
 	.row{flex-wrap: nowrap;}
+	.main-container{ padding-top: 0;}
 	.logo{background:url(../img/logo.png) no-repeat;width:178px;height:42px;text-indent:-9999px;overflow:hidden;}
 	nav{ text-align:center;text-transform:uppercase;
-		ul{margin:0;padding:0;
+		ul{margin:0;padding:0; white-space: nowrap;
 			li{ display:inline;height:100%;margin-right:8px;
 				a{display:inline-block;padding: 9px 1.73636363636%;height:100%;line-height:100%;position:relative;font-size:13px;color: $txtC_menu;font-weight:500;
 					&:hover{color:$bgC_orangeBtn;}
