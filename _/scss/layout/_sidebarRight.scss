@@ -4,6 +4,7 @@
 
 // mini games
 .mini-games{
+	span{ font-weight: 500; cursor: default;}
 	.more{opacity:0.8; color:$txtC_menu;font-size:13px; font-weight:500;float: right;
 		&:hover{opacity:1;}
 	}
@@ -68,7 +69,7 @@
 				&:after{content:"\e903";position: absolute;left:8px;height: 20px;}
 				//&:before{content:"\39";position: absolute;left:0;opacity:0.5}
 			}
-			&.active{opacity:1;}
+			&.active, &:hover{opacity:1;}
 		}
 	}
 	.module_body{
@@ -94,19 +95,26 @@
 }
 
 //betslip
-.betslip{
+.betslip{ background: $bgC_moduleTab;
 	.options_tab{
 		.quick_bet_section, .options_section{ display: none;}
 		.wrap{ height:35px;
-			.quick_bet{ padding: 10px 15px;line-height: 1; width: 80%;
+			.quick_bet{ padding: 10px 15px;line-height: 1; width: 83.7%; position: relative;
 				label{ display: block;margin-right: 10px;float: left;height: 100%;font-size:13px; color:$txtC_basic; margin-right:10px;}
+				&:after{content:'';border-left:solid 1px $bgC_inputInactive;width:1px;height:100%; position: absolute; top: 0; right: 0;}
 			}
-			.options{ width: 52px;height: 100%;float: right; text-align: center; position: relative;font-family:'loungebet_icons'; border-left:solid 1px $bgC_tooltipGrey;cursor: pointer;
+			.options{ width: 52px;height: 100%;float: right; text-align: center; position: relative;font-family:'loungebet_icons'; cursor: pointer; transition: all $x1;
 				&:before{ content:'\65'; position: absolute; right:0; font-size: 20px; color:$bgC_tooltipGrey;width: 100%;height: 100%;padding: 7px 0;line-height: 1.1;}
+				&:hover{transform: rotate(45deg);
+				}
 			}
 		}
 	}
+	.module_body{ width:100%;float:left;border-top: solid 1px $bgC_inputInactive;position: relative;
+		.noBets{ display: none;	font-size:12px; font-weight:400; padding: 18px 10px; text-align: center; line-height: 1;}
+		&.empty{
+			.noBets{ display: block; }
+		}
+		&:before{ content:""; width: 100%; height: 1px; border-top:solid 1px $txtC_menu;position: absolute;}
+	}
 }
-
-
-

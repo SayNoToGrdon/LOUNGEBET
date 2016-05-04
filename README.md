@@ -1,2 +1,1 @@
-# victoryroom
-VictoryRoom Front-end Repository
+# ┐( ˘_˘)┌
