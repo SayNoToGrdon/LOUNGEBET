@@ -1,0 +1,49 @@
+// Phone
+$phone: "only screen and (min-width : 320px) and (max-width : 786px)";
+$maxPhone: "only screen and (max-width : 786px)";
+
+// Tablet
+$tablet: "only screen and (min-width : 786px) and (max-width : 980px)";
+$maxTablet: "only screen and (max-width : 980px)";
+
+// Desktop
+$desktop: "only screen and (min-width : 980px) and (max-width : 1310px)";
+$maxDesktop: "only screen and (max-width : 1310px)";
+
+// Mini Desktop
+$miniDesktop: "only screen and (min-width :980px) and (max-width : 1240px)";
+$maxMiniDesktop: "only screen and (max-width : 1160px)";
+// $tabletToDesktop: "only screen and (max-width : 1310px)";
+
+// Custom 
+$customForDesk1: "only screen and (min-width : 1160px) and (max-width : 1290px)";
+$customForDesk2: "only screen and (min-width : 1220px) and (max-width : 1260px)";
+$customForDesk3: "only screen and (min-width : 1130px) and (max-width : 1220px)";
+$customForDesk4: "only screen and (max-width : 1130px)";
+$customForDesk5: "only screen and (min-width :1600px)";
+$customForDesk6: "only screen and (max-height :710px)";
+$customForDesk7: "only screen and (min-width : 1200px) and (max-height : 710px)";
+$customForDesk8: "only screen and (max-width :885px)";
+
+
+@media #{$maxMiniDesktop} {
+}
+
+@media #{$maxDesktop} {
+	body{min-width: 963px;
+		.menuTabs{
+			nav{
+				ul{
+					li{
+						&:first-child{width: 1.5%;}
+					}
+				}
+			}
+		}		
+	}
+	body.fullWidth {min-width: 600px;width: 100%}
+}
+
+@media #{$maxMiniDesktop} {
+	header nav a{padding:15px 0.80208333333333%}
+}

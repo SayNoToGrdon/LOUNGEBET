@@ -1,0 +1,77 @@
+// Bourbon
+// @import "bourbon/bourbon";
+
+// Base
+@import "base/reset";
+@import "base/typography";
+@import "base/grid";
+@import "base/fonticon";
+
+// Media Query
+@import "media/media";
+
+// Config (colors, fonts)
+@import "config/config";
+
+
+
+
+
+// Components
+@import "components/buttons";
+@import "components/module";
+
+
+
+
+
+
+// Layouts
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";
+@import "layout/sidebarRight";
+//@import "layout/lightbox";
+
+
+
+
+// Themes
+//@import "themes/theme";
+
+// Utilities
+//@import "utils/helpers";
+//@import "utils/variables";
+
+//@import "components/dropdown";
+//@import "components/language";
+
+// + My Account
+//@import "components/topwrap";
+//@import "components/notifications";
+//@import "components/pagination";
+//@import "components/customboxes";
+//@import "components/menutabs";
+//@import "components/_toggle";
+
+
+// Vendors
+//@import "vendors/slick.scss";
+//@import "vendors/fancybox";
+//@import 'vendors/variables';
+//@import 'vendors/flag-icon-base';
+//@import 'vendors/flag-icon-list';
+//@import 'vendors/_jquery-ui';
+
+
+// @import "pages/home";
+//@import "pages/registration";
+//@import "pages/casino";
+//@import "pages/login";
+//@import "pages/slot-interface";
+//@import "pages/popup";
+//@import "pages/promotions";
+//@import "pages/promotions-casino-view";
+//@import "pages/footer-lightbox";
+
+

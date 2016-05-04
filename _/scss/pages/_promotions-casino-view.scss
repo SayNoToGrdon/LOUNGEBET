@@ -1,0 +1,96 @@
+.promotionsCasinoSinglePage{
+	.wrapper{width:100%;float:left;margin-top:20px;}
+	.titleDivider{width:100%;float: left;clear:both;height:27px;
+		i.line.left{width:95.532824%;border-bottom: solid 1px #cfbe62;float: right;height: 10px;}
+		.back{float: left;font-size:14px;color:$goldishC;font-weight:500;text-transform: capitalize;
+			&:before{background: url("../img/icons/sprite.png"); width: 10px;height: 20px;content: "";float: left;margin-right: 5px;background-position: -112px -41px;}
+		}
+	}
+	.thumbs.rightside{width:32.8244274809%;float:right;margin-top:12px;margin-bottom: 20px;opacity:0;transition:$x2 opacity;
+		.slider_list{overflow:hidden;
+			li{border: none;float: left;width:100%;position: relative;height: 285px;margin: 5px 0;overflow:hidden;cursor: default;
+				.bottom{height:44px;width: 100%;position: absolute;bottom:0;left:0;z-index: 5;background-color:rgba(71,76,93,.6);
+					p{color:#ffffff;font-size:16px;line-height: 44px;margin-left: 15px;text-transform:capitalize;}
+				}
+				figure{height: 100%;overflow: hidden;float: left;width: 100%;}
+				img{margin:0 auto;width: 100%;position: relative;z-index: 0;min-width:inherit;}
+				.hover{background-color:rgba(0,0,0,.7);width:100%;height: 100%;position:absolute;left:0;top:0;z-index:2;opacity: 0;box-sizing: inherit;padding:14px;transition:$x1 all;
+					.btn.readmore{position:absolute;right:15px;bottom:60px;transform:scale(0.95);}
+					p{color:#ffffff;text-align: justify;max-height: 126px;max-height: 126px;overflow: hidden;}
+				}
+				&:hover{
+					.hover{opacity: 1;}
+					.btn.readmore{transform:scale(1);opacity:1;}
+					.bottom{background-color:rgba(0,0,0,.2);}
+				}
+				.terms_hidden, .img_hidden{display:none;}
+				.badge{height:27px;padding:0 15px;position:absolute; left:0;top:15px;font-size:14px;color:#fff;text-align:center;line-height:26px;box-shadow: 0px 3px 5px 0px rgba(1, 1, 1, 0.35);text-transform:capitalize;}
+				.badge.casino{background:#8A0E7D;}
+				.badge.sports{background:#0D8443;}
+				.badge.live-casino{background:#400E8A;}
+			}
+			.image_list_item.slick-slide.slick-current.slick-active{display:none;}
+		}
+		.morePromo{background-color:#164F76;color:#ffffff;padding: 10px 15px;text-align: center;display:inline-block;width:100%;margin-top:10px;font-size:14px;
+			&:hover{opacity:.8;}
+		}
+	}
+	.topCoverImg.image_list_item.exception{margin-bottom: 10px;position:relative;overflow: hidden;min-width: inherit;
+		.arrow_left, .arrow_right{width:40px;position:absolute;height:inherit; top:0;cursor:pointer;}
+		.arrow_left{left:0;
+			&:before{content:"";position:absolute;width:100%;height:46px;top:42%;left:0;background:url(../img/icons/sprite.png) -15px -247px;}
+			&:hover{
+				&:before{background:url(../img/icons/sprite.png) -94px -247px;}
+			}
+		}
+		.arrow_right{right:0;
+			&:before{content:"";position:absolute;width:100%;height:46px;top:42%;right:0;background:url(../img/icons/sprite.png) -62px -247px;}
+			&:hover{
+				&:before{background:url(../img/icons/sprite.png) -137px -247px}
+			}
+		}
+	}
+	.promoContent{width: 66.4122137405%;float:left;margin-top: 17px;color:#ffffff;font-size: 14px;margin-bottom:20px;opacity:0;transition:$x2 opacity;
+		h2{color:$goldishC;text-transform: capitalize; padding: 0 15px;font-weight: 100;font-size:16px;}
+		article{text-align: justify; color:inherit;text-indent: 28px;padding: 0 15px;margin-top: 20px;}
+		.terms{float: left;padding: 0 15px;font-size: 12px;width: 100%;float: left;
+			div{text-align: justify; color:inherit;opacity:0;transition:$x1 all;font-size: 14px;}
+			p{margin-top: 10px;text-indent: 28px;}
+			&:after{content:""; width:20px;height:20px;}
+			.show{color:#ffffff;cursor:pointer;
+				.cross{width: 9px;height: 9px;display: inline-block;position: relative;margin-left: 5px;transition:$x1 all;
+					i{position: absolute;
+						&:first-child{border-right: solid 1px;height: 9px;left: 4px;}
+						&:nth-child(2){border-bottom: solid 1px;width: 9px;top: 4px;}
+					}
+				}
+			}
+			ul{list-style-type: decimal;list-style-position: inside;}
+		}
+		.terms.opened{
+			div{opacity:1;}
+			.show{
+				.cross{transform: rotate(45deg);}
+			}
+		}
+		.btn.playNome{float:left;margin: 20px 0 20px 15px;}
+	}
+}
+
+//  --  Media queries -- //
+
+@media #{$maxMiniDesktop} {
+  .promotionsCasinoSinglePage {
+    .titleDivider {
+      i.line.left{width: 93.532824%}
+      h3{width: 13.21374%;}
+    }
+  }
+  .promotionsCasinoSinglePage .thumbs.rightside{
+    .slider_list li{
+      .hover {
+        p{max-height:88px;}
+      }
+    }
+  }
+}

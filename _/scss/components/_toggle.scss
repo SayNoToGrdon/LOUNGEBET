@@ -1,0 +1,39 @@
+.helpCenter, .faqPage{
+	.toggleBox{cursor:pointer;margin: 1px 0;width: 100%;float:left;@include MA_fullBorder();transition:$x1 all;background:$MA_backgroundLight2C;
+		span{line-height: 30px;padding:10px;font-size:14px;font-weight:400;display: block;color: $MA_textC; font-weight: 500;transition: font $x1;
+			i{float:right;font-style: normal;font-size:24px;transition:$x1 all;
+				&:before{content:"+";font-weight: 300;}
+			}
+		}
+		.details{display: none;
+			ol{list-style: none;padding-left: 10px; padding-bottom: 8px;
+				li{}
+			}
+		}
+		&.expanded{background:$MA_backgroundWhiteC;
+			span{color:$MA_linkC;
+				i{color:$MA_linkC;
+					&:before{content:"_";position:relative;top:-10px;right:2px;}
+				}
+			}
+		}
+	}
+	.toggleBoxSearch{margin: 1px 0;width: 100%;float:left;@include MA_fullBorder();background:$MA_backgroundLight2C;
+		p.title{cursor:pointer;}
+		.details{height: 20px;overflow: hidden;
+			ol{list-style: none;
+				li:first-child{width:1000px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;transition: overflow 1s;}
+			}
+		}
+		&.expanded{background:$MA_backgroundWhiteC;
+			ol{
+				li:first-child{overflow: visible;}
+			}
+			span{color:$MA_linkC;
+				i{color:$MA_linkC;
+					&:before{content:"_";position:relative;top:-10px;right:2px;}
+				}
+			}
+		}
+	}
+}

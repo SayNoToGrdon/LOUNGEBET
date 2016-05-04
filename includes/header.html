@@ -1,0 +1,116 @@
+<div class="overlay"></div>
+<div class="headerBG"></div>
+<header>
+    <div class="container">
+        <div class="wrap">
+            <a href="#"><h1 class="logo">VictoryRoom</h1></a>
+            <nav>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#" ui-sref="promotions" ng-class="{active: $state.includes('promotions') || $state.includes('promotions-view')}" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_main_menu_5)"></a></li>
+                </ul>
+            </nav>
+                <!-- Logged In - Account -->
+                <div class="loggedInDetails">
+                    <div class="balance">
+                        <span class="title"><i> {{ totalMoney | currency : $ : 0 }} </i><i>Show Balance</i></span>
+                        <em class="hover"><!-- on hover --></em>
+
+                        <div class="dropdown">
+                            <div class="row top">
+                                <!-- <span class="toggle">Hide Balance</span> -->
+                                <span class="deposit"><a href="#">Deposit</a></span>
+                            </div>
+                            <div class="row total">
+                                <p>Total Balance <i>$290</i></p>
+                            </div>
+                            <div class="row">
+                                <p>Withdrawable Balance <i>$290</i></p>
+                            </div>
+                            <div class="row totalBonus">
+                                <p>Total Bonus Balance <i>$290</i></p>
+                            </div>
+                            <div class="row withProgress">
+                                <p>Free Bets <i> $290</i></p>
+
+                                <div class="progress">
+                                    <span style="width:40%"></span>
+                                </div>
+                                <p class="withDot"><i>$70</i> <i>$220</i></p>
+                            </div>
+                            <div class="row withProgress">
+                                <p>Casino Bonus <i>$170</i></p>
+
+                                <div class="progress">
+                                    <span style="width:70%"></span>
+                                </div>
+                                <p class="withDot"><i>$120</i> <i>$150</i></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <span class="title">{{userName}}</span>
+
+                        <div class="dropdown">
+                            <div class="row top">
+                                <p class="title">Current Level: 3</p>
+
+                                <p>Accumulated Points: <b>3650</b></p>
+
+                                <div class="progress">
+                                    <span style="width:40%"></span>
+                                </div>
+                                <div class="bottom">
+                                    <p>Next Level: <b>4</b></p>
+
+                                    <p>Required Points: <b>350</b> <a href="#">more info</a></p>
+                                </div>
+                            </div>
+                            <ul>
+                                <li><a href="#">Balance Management</a></li>
+                                <li><a href="#">My Profile</a></li>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Promotions</a>
+                                <li><a href="#">VIP</a>
+                                <li><a href="#" >Messages</a></li>
+                                <li><a href="#">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <span class="title">
+                            <i class="notification">10</i>
+                        </span>
+                        <div class="dropdown">
+                            <ul>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html" class="unread">Re: How to
+                                    win <i>Today</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html" class="unread">Re: How to
+                                    deposit <i>Yersterday</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html">First Deposit Bonus <i>3
+                                    days ago</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html">Welcome Bonus <i>50 days
+                                    ago</i></a></li>
+                                <li><a href="../../my_account/6_messages/6_Messages_Read.html">Welcome <i>78 days
+                                    ago</i></a></li>
+                            </ul>
+                            <a href="../../my_account/6_messages/6_Messages_Inbox.html" class="viewAll">&mdash; View
+                                All &mdash;</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <i class="notification">10</i> -->
+
+                <!-- Login/Register -->
+                <span ng-show="!isLoggedIn">
+                    <a href="#" fancybox ng-click="openFancybox('views/registration/full-registration-lightbox.html', $event)"
+                       class="btn mainC lightbox" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_register_btn)"></a>
+                    <a href="#" fancybox ng-click="openFancybox('views/login/login-lightbox.html', $event)"
+                       class="btn secC lightbox" ng-bind-html="getText(HEADERPAGE_ASSETS.text.headerPage_login_btn)"></a>
+                </span>
+            </div>
+        </div>
+    </div><!-- container -->
+
+</header>

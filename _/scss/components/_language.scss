@@ -1,0 +1,23 @@
+.lang{float:right;cursor:pointer;position:relative;text-indent:10px;margin:10px 0 0 0;
+	a{float:left;width:100%;color:$brightFontC;line-height:100%;padding:7px 0 0 9px;position:relative;text-indent:5px;
+		&.title{position:relative;height:32px;line-height:32px;float: left;padding-right:22px;padding-left:10px;padding-top:8px;
+			&:before{background:url(../img/icons/sprite.png) -192px -9px;width:9px;height:5px;content:" ";position:absolute;top:14px;right:10px;}
+			&:hover{background-color:$lightActive;}
+		}
+	}
+	i.flag-icon{margin-right:0;float: left;height:14px;width:25px;
+		&:first-child{margin-top:2px;}
+		&:before{height: 100%;width: 20px;content: " ";position: absolute;top: 0;left: 2px;background-color: rgba(0, 0, 0, 0.1);}
+	}
+	.dropdown{opacity:0;visibility:hidden;transition:$x1 all;border:1px solid #2B2F3F;position:absolute;top:39px;right:0;background:$brightFontC;transform:translateY(-5px);width:100px;margin-left:0;
+		.animate{display:block}
+		i.flag-icon{width:17px;height:11px;margin-top:2px;}
+		&.animate{opacity:1;visibility:visible;z-index: 1;transform:translateY(0);}
+		&:before{@extend .arrowBefore}
+		&:after{@extend .arrowAfter}
+		&:before,&:after{left:auto;right:8px;}
+		a{color:$lightboxBackgroundC;font-size:12px;height:32px;line-height:150%;
+			&:hover{background-color:$borderFooterC;color:$brightFontC}
+		}
+	}
+}

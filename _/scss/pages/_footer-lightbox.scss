@@ -1,0 +1,42 @@
+.lightboxContent.footerLightbox{@include customScrollbar(4px, $MA_backgroundWhiteC, $MA_textC);
+    // .fancybox-close{right: 20px;top:17px;}
+}
+.lightboxContent.footerLightbox{width: 900px; height: 636px; border: 15px solid $TC_lightboxBorderC;
+    .header{background: #121626;
+        h3{line-height:26px; text-align: center; font-size: 18px; color: $TC_headerTextC;font-weight:400; }
+    }
+    .content{width: 100%; height: 93%; padding: 0;background: #ffffff;border: 1px solid #D4D4D4;
+        .contentInner{overflow-y: scroll;width: 100%;height: 100%; padding: 15px;
+            div.row.info, h4{font-size: 14px; line-height: 21px;}
+            p+div{padding-left:10px;
+                h4{margin-bottom: 5px;}
+            }
+            p.title{font-size: 16px; font-weight: 500; color: $TC_titleTextC; margin-bottom: 10px;}
+            ol{list-style: decimal;padding-left: 15px;
+                ol{list-style: none;padding-left: 0;
+                    div.row.info{margin-bottom: 5px;
+                        p{font-weight: 500;}
+                    }
+                }
+            }
+        }
+    }
+    .content.privacyContent{
+        .contentInner{
+            ol{list-style: none;padding-left: 0;}
+            div.row.info{margin-bottom: 10px;
+                p{font-weight: 500;}
+            }
+        }
+    }
+    .content.restrictedContent{
+        .contentInner{
+            div.row.info{margin-bottom: 5px;border-bottom: 1px solid black;
+                p{font-weight: 500;margin-bottom: 10px}
+            }
+            ul{width: 100%;overflow: hidden;  margin: 10px; margin-top: 20px;font-size: 14px;
+                li{float: left; display: inline; width: 25%;}
+            }
+        }
+    }
+}
