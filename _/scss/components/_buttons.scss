@@ -5,26 +5,30 @@
 .btn-xl{ @include btn(20px, 0 36px, 46px); }
 
 .btn-green{ background: $bgC_greenBtn; border: solid 1px $bgC_greenBtn;
-  &:hover{ background: $bgC_greenBtn_hover; border-color:$bgC_greenBtn_hover;}
+	&:hover{ background: $bgC_greenBtn_hover; border-color:$bgC_greenBtn_hover;}
 }
 
 .btn-orange{ background: $bgC_orangeBtn; border: solid 1px $bgC_orangeBtn;
-  &:hover{ background: $bgC_orangeBtn_hover; border-color:$bgC_orangeBtn_hover;}
+	&:hover{ background: $bgC_orangeBtn_hover; border-color:$bgC_orangeBtn_hover;}
 }
 
 .btn-transparant{ border: solid 1px $txtC_menu;
-  &:hover{ background: $bgC_greenBtn; border-color:$bgC_greenBtn;}
+	&:hover{ background: $bgC_greenBtn; border-color:$bgC_greenBtn;}
 }
 
 [class^="btn-"]{cursor:pointer;}
 
 // radio button ON/OFF
 .switch { width:47px; position: relative; display: inline-block; height: 15px; border: 1px solid $bgC_inputActive; border-radius: 4px; background: $bgC_inputActive; cursor: pointer; font-size: 10px;
-  span { font-weight:700;display: inline-block;width: 20px;float: left;line-height: 1.3;text-align: center;color: $txtC_basic;  }
-  span.on { color: $txtC_menu; margin-right: 4px; padding-left: 3px;}
-  span.off { opacity: 0.5;}
-  .toggle { z-index: 1;position: absolute; width: 21px; top: 0.2px; height: 13px; border-radius: 0 3px 3px 0; background: $txtC_menu; transition: all $x1 ease-in-out;  }
-  &.on .toggle { left: 0; border-radius: 3px 0 0 3px; }
-  &.on { border: 1px solid $bgC_inputInactive; background: $bgC_inputInactive;}
-  &.off .toggle { left: 54%; }
+	span { font-weight:700;display: inline-block;width: 20px;float: left;line-height: 1.3;text-align: center;color: $txtC_basic;  }
+	span.on { color: $txtC_menu; margin-right: 4px; padding-left: 3px;}
+	span.off { opacity: 0.5;}
+	.toggle { z-index: 1;position: absolute; width: 21px; top: 0.2px; height: 13px; border-radius: 0 3px 3px 0; background: $txtC_menu; transition: all $x1 ease-in-out;  }
+	&.on .toggle { left: 0; border-radius: 3px 0 0 3px; }
+	&.on { border: 1px solid $bgC_inputInactive; background: $bgC_inputInactive;}
+	&.off .toggle { left: 54%; }
+	// skrew you mozilla >_<
+	@-moz-document url-prefix() {
+		&.off .toggle { left: 53%; }
+	}
 }
