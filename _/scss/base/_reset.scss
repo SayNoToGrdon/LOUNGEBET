@@ -94,6 +94,9 @@ input[type="checkbox"] {vertical-align: bottom;}
 .ie6 input {vertical-align: text-bottom;}
 
 select, input, textarea {font: 99% sans-serif;}
+select, input, textarea, button {
+	&:focus{outline:none;}
+}
 
 table {font-size: inherit; font: 100%;}
 

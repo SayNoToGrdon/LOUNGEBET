@@ -191,55 +191,59 @@ i:before{
   content: '';
   font-style: normal;
 }
+.icon-corner:before {
+    content: "\e90c";
+}
 .icon-envelope:before {
-  content: "\e906";
-  position: relative;
-  top: 3px;
+    content: "\e906";
 }
 .icon-support_circle:before {
-  content: "\e907";
-  position: relative;
-  top: 3px;
+    content: "\e907";
 }
 .icon-resize_to_small:before {
-  content: "\e90a";
+    content: "\e90a";
 }
 .icon-resize_to_big:before {
-  content: "\e90b";
+    content: "\e90b";
 }
 .icon-lock_closed:before {
-  content: "\e904";
+    content: "\e904";
 }
 .icon-lock_opened:before {
-  content: "\e905";
+    content: "\e905";
 }
 .icon-match_live:before {
-  content: "\e903";
+    content: "\e903";
 }
 .icon-cash_out:before {
-  content: "\e902";
+    content: "\e902";
 }
 .icon-top_league:before {
-  content: "\e901";
+    content: "\e901";
 }
 .icon-outright:before {
-  content: "\e900";
+    content: "\e900";
 }
 .icon-full_screen:before {
-  content: "\61";
+    content: "\61";
 }
 .icon-support:before {
-  content: "\62";
+    content: "\62";
 }
 .icon-help:before {
-  content: "\63";
+    content: "\63";
 }
 .icon-speaker:before {
-  content: "\64";
+    content: "\64";
 }
 .icon-settings:before {
-  content: "\65";
+    content: "\65";
 }
+
+
+
+
+
 .icon-live_stream,
 .icon-outrights,
 .icon-statistics{
