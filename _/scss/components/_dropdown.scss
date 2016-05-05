@@ -1,0 +1,15 @@
+
+@mixin dropdown($width, $with-arrow: true, ) {
+	.dropdownContainer {
+		float: right;
+		width: 250px;
+		background: transparent;
+		position: relative;
+		.dropdown {
+			position: absolute;
+			background: $bgC_dropdown;
+			border-radius: 4px;
+			border: 1px solid $borderC_dropdown;
+		}
+	}
+}

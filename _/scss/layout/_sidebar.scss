@@ -9,7 +9,7 @@
       .event{float:left;width:100%;white-space:nowrap;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;position:relative;border-bottom:1px solid $borderC_module;
         a, span{color:$txtC_basic;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;float:left;}
         .eventTitle{cursor:pointer;position:relative;width:100%;display:flex;
-          .eventName{padding:0 10px;float:left;max-width:207px;transition:all $x2;}
+          .eventName{padding:0 10px;float:left;max-width:100%;transition:all $x2;}
           .eventHover{position:relative;width:0;height:30px;opacity:0;visibility:hidden;display:flex;justify-content:flex-end;transition:width $x2,right $x1;
             .icon-star, .icon-arrow_down{position:absolute;height:30px;}
             .icon-star{left:20px;padding-top:8px;transition:all $x3;}
@@ -18,7 +18,7 @@
           &.iconic{
             .eventName{max-width:89%;}
             &:hover{
-              //.eventName{max-width:89%;}
+              .eventName{max-width:89%;}
               .eventHover{max-width:29%;}
             }
           }
