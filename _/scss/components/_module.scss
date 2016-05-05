@@ -17,14 +17,13 @@
 		}
 	}
 	.title{border-radius:4px 4px 0 0; padding:0 10px;
-		&.iconic{ padding:0 10px 0 26px;
+		&.iconic{padding:0 10px 0 26px;
 			&:after{content:'';width:13px;height:13px;font-size:13px;font-family:'loungebet_icons';position:absolute;left:10px;color:$txtC_btn;}
 		}
 	}
 	.header{width:100%;border-radius:4px;margin:0 0 5px;box-shadow:0 0 1px $txtC_basic_rgba02;
 		&:after{content:'\31';width:13px;height:13px;font-size:13px;font-family:'loungebet_icons';position:absolute;right:10px;color:$txtC_btn;}
 	}
-
 	&.simple.header:after{content: ''};
 	&.opened.header:after{content: '\7a'};
 }
