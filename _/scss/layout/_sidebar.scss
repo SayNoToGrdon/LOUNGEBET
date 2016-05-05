@@ -8,7 +8,6 @@
     .module_body{
       .event{float:left;width:100%;white-space:nowrap;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;position:relative;border-bottom:1px solid $borderC_module;
         a, span{color:$txtC_basic;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;float:left;}
-
         .eventTitle{cursor:pointer;position:relative;width:100%;display:flex;
           .eventName{padding:0 10px;float:left;max-width:207px;transition:all $x2;}
           .eventHover{position:relative;width:0;height:30px;opacity:0;visibility:hidden;display:flex;justify-content:flex-end;transition:width $x2,right $x1;
@@ -19,7 +18,7 @@
           &.iconic{
             .eventName{max-width:89%;}
             &:hover{
-              .eventName{max-width:89%;}
+              //.eventName{max-width:89%;}
               .eventHover{max-width:29%;}
             }
           }
@@ -61,7 +60,9 @@
         &.opened{
           .eventDetails{height:auto;opacity:1;visibility:visible;}
           .eventHover{
-            .icon-arrow_down:before{content:'\7a';font-family: "loungebet_icons";}
+            .icon-arrow_down{
+              &:before{}
+            }
           }
         }
         &.active{
@@ -71,7 +72,7 @@
               &.liveStream:after{color:$txtC_menu;opacity: .5;}
             }
             .eventHover{width:29%;opacity:1;visibility:visible;
-              .icon-star{left:0px;opacity:.5;
+              .icon-star{left:0;opacity:.5;
                 &:hover{opacity: 1;}
               }
               .icon-arrow_down{right:0;padding-left:7px;opacity:.5;
@@ -119,8 +120,7 @@
           .sportHover{right:0;}
           &:after{content:"\31";color:$txtC_menu;}
         }
-        &:before{content:"";font-family:"loungebet_icons"; }
-        &:after{content:"\31";color:$iconC_iconArrowDown;font-family:"loungebet_icons";transition:all $x3 $x0;}
+        &:after{color:$iconC_iconArrowDown;transition:all $x2;}
       }
       &.opened{
         .header{color:$txtC_menu;
@@ -137,7 +137,7 @@
     }
   }
 }
-.liveStream{position:relative;left:-8px;color:$iconC_liveStream;width:20px;opacity:0.5;transition:all $x1;font-family:'loungebet_icons';
+.liveStream{position:relative;left:-8px;color:$iconC_liveStream;width:20px;opacity:0.5;font-family:'loungebet_icons';transition:all $x1;
   &:after, &:before{content: '';position:absolute;font-size:16px;}
   &:after{content:"\38";color:$iconC_liveStream;opacity: .7}
   &:before{content:"\39";opacity: .3}
