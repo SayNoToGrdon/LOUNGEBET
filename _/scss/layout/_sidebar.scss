@@ -10,10 +10,12 @@
         a, span{color:$txtC_basic;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;float:left}
 
         .eventTitle{cursor:pointer;position:relative;width:100%;float:left;display:flex;
+          .liveStream{left:-5px;}
           .eventName{padding:0 10px;float:left;max-width:207px;transition:all $x2;}
           .eventHover{position:relative;float:right;width:0;height:30px;opacity:0;visibility:hidden;display:flex;justify-content:flex-end;transition:width $x2,right $x1;
-            .icon-star{position: absolute;left:20px;height:30px;padding-top:9px;transition:all $x3;}
-            .icon-arrow_down{position:absolute;right:25px;height:30px;width:30px;padding-top:9px;border-left: 1px solid;transition:all $x2;}
+            .icon-star, .icon-arrow_down{position:absolute;height:30px;}
+            .icon-star{left:20px;padding-top:8px;transition:all $x3;}
+            .icon-arrow_down{right:25px;width:30px;padding-top:9px;border-left:1px solid;transition:all $x2;}
           }
           &.withIcon{
             .eventName{max-width:200px;}
@@ -84,34 +86,52 @@
         &:last-child{margin-bottom: 0;}
       }
     }
-  }
-}
-//styles for separate modules in leftsidebar
-.search_collapse{
-  .filter{width: 100%;float:left;
-    a{display: block;float:left;}
-    .icon-close{float:right;}
-  }
-}
-.sportListItem{float:left; width:100%;
-  .header{position:relative;background-color:$bgC_moduleTab;color:$txtC_basic;
-    .sportHover{z-index:0;display:block;position:absolute;top:0;bottom:0;right:98.3%;left:0;transition:all $x2 $x0;}
-    .sportName{z-index:1; position: relative;}
-    &:hover{color:$txtC_menu;
-      .sportHover{right:0;}
-      &:after{content:"\31";color:$txtC_menu;}
+    //styles for separate modules in leftsidebar
+    // module search_collapse
+    &.search_collapse{background:$bgC_base; border-radius:4px;padding:8px 10px;
+      .title{padding: 0;
+        .filter{float:left;margin-bottom:9px;
+          span{line-height:150%;float:left;text-align: center;}
+          //a{opacity:0.5;min-height:21px;margin-right:6px;padding:0 10px;color:$txtC_btn;border-radius:3px;transition:all $x1;
+          //  &.active, &:hover{opacity:1;}
+          //}
+        }
+        .icon-close{float:right;color:$txtC_btn;opacity: 0.5;transition:all $x1;
+          &:before{font-size:22px;}
+          &:hover{opacity:1;}
+        }
+      }
+      .search{position:relative;clear:both;
+        input{width:100%;padding:8px 10px 8px 30px;border-radius:3px;border:none;line-height:100%;
+          &:focus+button{opacity: 1;}
+        }
+        button{border:none;background:transparent;position:absolute;top:4px;left:0;padding:0;z-index:2;opacity:0.3;transition:all $x1;
+          &:before{padding:3px;color:$txtC_basic;font-size:22px;}
+        }
+      }
     }
-    &:before{content:"";font-family:'loungebet_icons'; }
-    &:after{content:"\31";color:$iconC_iconArrowDown;font-family:'loungebet_icons';transition:all $x3 $x0;}
-  }
-  &.opened{
-    .header{color:$txtC_menu;
-      .sportHover{right:0;}
-      &:after{content:"\7a";color:$txtC_menu;}
+    &.sportListItem{float:left; width:100%;
+      .header{position:relative;background-color:$bgC_moduleTab;color:$txtC_basic;
+        .sportHover{z-index:0;display:block;position:absolute;top:0;bottom:0;right:98.3%;left:0;transition:all $x2;}
+        .sportName{z-index:1; position: relative;}
+        &:hover{color:$txtC_menu;
+          .sportHover{right:0;}
+          &:after{content:"\31";color:$txtC_menu;}
+        }
+        &:before{content:"";font-family:'loungebet_icons'; }
+        &:after{content:"\31";color:$iconC_iconArrowDown;font-family:'loungebet_icons';transition:all $x3 $x0;}
+      }
+      &.opened{
+        .header{color:$txtC_menu;
+          .sportHover{right:0;}
+          &:after{content:"\7a";color:$txtC_menu;}
+        }
+      }
     }
   }
 }
-.liveStream{position:relative;left:-5px;color:$iconC_liveStream;font-family:'loungebet_icons';float:left;width:16px;opacity:0.5;transition:all $x1;
+
+.liveStream{position:relative;color:$iconC_liveStream;font-family:'loungebet_icons';width:25px;opacity:0.5;transition:all $x1;
   &:after, &:before{content: '';position:absolute;font-size:16px;}
   &:after{content:'\38';color:$iconC_liveStream;opacity: .7}
   &:before{content:'\39';opacity: .3}
