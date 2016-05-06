@@ -17,8 +17,15 @@
 			}
 			.heading{ padding-left:10px; font-family: 'Ubuntu'; font-size: 13px; opacity: 0.7; font-weight: 500;}
 		}
-		.favs_container{
-
+		.favs_container{ padding: 10px; background: url(../img/icons/pattern.jpg); overflow: hidden; position: relative;
+			.note{ display: none; padding: 12px 0; background: $bgC_moduleTab; color: $txtC_basic_rbga08; text-align: center; font-size: 15px; border-radius: 4px;
+				span{ font-size: 18px; color: $txtC_basic_rbga08;}
+			}
+			&.empty{ .note{ display: block;}}
+			&:before{ content:""; position: absolute; box-shadow: inset 0 0 10px $txtC_basic_rbga08; top: 0; width: 103%; height: 100%; left: -9px;}
+		}
+		&.closed{
+			.favs_container{ height: 0;}
 		}
 	}
 	.wrapper{
