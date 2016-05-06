@@ -1,7 +1,6 @@
 .hide{ display: none!important; }
 .wrapper{ width:100%; float:left;}
 
-
 //*******************************//
 //   Classes for sport Icons    //
 //*****************************//
@@ -25,16 +24,15 @@
 //*****************************//
 .filter{
 	span{cursor:pointer;display:inline-block;width:38px;height:22px;background:$bgC_baseDark;border:solid 1px $borderC_headerDark;border-radius:2px;opacity:0.5;
-		&.video{position: relative;
-			&:after{content:"\38";position: absolute;left:8px;height: 20px;font-family:'loungebet_icons';}
-			&:before{content:"\39";position: absolute;left:8px;opacity:0.3;height:20px;font-family:'loungebet_icons';}
+		&.video{ position: relative;
+			&:after{ content:"\38";position: absolute;left:8px;height: 20px;font-family:'loungebet_icons';}
+			&:before{ content:"\39";position: absolute;left:8px;opacity:0.3;height:20px;font-family:'loungebet_icons';}
 		}
-		&:after, &:before{font-size:20px;}
-		&.active, &:hover{opacity:1;}
-		&.scout{position: relative;
+		&:after, &:before{ font-size:20px;}
+		&.active, &:hover{ opacity:1;}
+		&.scout{ position: relative;
 			&:after{content:"\e903";position: absolute;left:8px;height: 20px;font-family:'loungebet_icons';}
 			//&:before{content:"\39";position: absolute;left:0;opacity:0.5}
 		}
-
 	}
 }
