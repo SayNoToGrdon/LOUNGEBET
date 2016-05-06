@@ -62,18 +62,12 @@
 		.left, .right{ opacity:0.5;}
 		.filter{
 			span{margin-top:7px;
-				//&.video{position: relative;
-				//	&:after{content:"\38";position: absolute;left:8px;height: 20px;}
-				//	&:before{content:"\39";position: absolute;left:8px;opacity:0.3;height: 20px;}
-				//}
 				&.scout{position: relative;
 					&:after{content:"\e903";position: absolute;left:8px;height: 20px;}
 					//&:before{content:"\39";position: absolute;left:0;opacity:0.5}
 				}
-				//&.active, &:hover{opacity:1;}
 			}
 		}
-
 	}
 	.module_body{
 		.filter{ height:27px; width:100%;float:left;border-bottom: solid 1px $borderC_module;background:$bgC_odds;
