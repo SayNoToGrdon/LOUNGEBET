@@ -1,0 +1,27 @@
+.overView{
+	.subTabs.content{ background: $bgC_moduleTab;
+		ul{ position: relative; overflow: hidden;
+			&:after{ content:""; position: absolute; height:1px; border-bottom: solid 1px $borderC_module; width: 51.59%; bottom: 0;}
+		}
+		li{ width: 12.1212121212%;
+			&:last-child{
+				 a{border-right: solid 1px $borderC_module;}
+			 }
+		}
+	}
+	.favEvents{
+		.title{ position:relative; background: $bgC_favEvents; border: solid 1px  rgba(0, 0, 0, 0.1); padding: 10px 0 10px 15px;
+			&:before{ font-size: 15px; color:$iconC_favorite;}
+			.collapse{ position: absolute; top: 0; cursor: pointer; right: 0;width: 35px; height: 100%; border-left: solid 1px rgba(0, 0, 0, 0.1);
+				&:before{ position: absolute;top: 12px; right: 10px; color:$bgC_tooltipGrey;}
+			}
+			.heading{ padding-left:10px; font-family: 'Ubuntu'; font-size: 13px; opacity: 0.7; font-weight: 500;}
+		}
+		.favs_container{
+
+		}
+	}
+	.wrapper{
+		.event_title{ }
+	}
+}

@@ -13,33 +13,21 @@
 // Config (colors, fonts)
 @import "config/config";
 
-
-
-
-
 // Components
 @import "components/buttons";
 @import "components/module";
 @import "components/customboxes";
-
-
-
-
-
-
-
+@import "components/tabs";
+//@import "components/dropdown";
 
 // Layouts
 @import "layout/header";
 @import "layout/footer";
 @import "layout/sidebar";
 @import "layout/sidebarRight";
+@import "layout/eventView";
+@import "layout/overView";
 //@import "layout/lightbox";
-
-
-
-
-
 
 
 // Themes
@@ -60,7 +48,6 @@
 //@import "components/menutabs";
 //@import "components/_toggle";
 
-
 // Vendors
 //@import "vendors/slick.scss";
 //@import "vendors/fancybox";
@@ -76,7 +63,16 @@
 //@import "pages/slot-interface";
 //@import "pages/popup";
 //@import "pages/promotions";
-//@import "pages/promotions-casino-view";
+//@imkport "pages/promotions-casino-view";
 //@import "pages/footer-lightbox";
+
+
+
+
+
+
+
+
+
 
 

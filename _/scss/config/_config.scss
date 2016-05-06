@@ -115,6 +115,9 @@ $bgC_footer : #dfd8c7;
 $bgC_footerPayment : #dbd3c1;
 $bgC_inputInactive : #d4d4d4;
 $bgC_inputActive : #52a178;
+$bgC_yellowCard : #d9ab1f;
+$bgC_redCard : #d1191f;
+$bgC_favEvents : #F9F7E7;
 
 $txtC_menu : #ffffff; /* + submenu */
 $txtC_basic : #303838;
@@ -127,19 +130,22 @@ $txtC_btn : #fffff7;
 $txtC_league : #797c80;
 $txtC_odd : #006aa6;
 
-
 $borderC : #a09c90;
 $borderC_header : #237a81;
 $borderC_headerDark : #0b4046;
 $borderC_module : #c3c3c3;
 $borderC_event : #d3d1c1;
+$borderC_widget : #041d15;
+$borderC_widget_rbga03 : rgba(4, 29, 21, 0.3);
+$borderC_dropdown : #bfbcb1;
 
 $iconC_liveStream: #5894bf;
 $iconC_iconArrowDown: #a5a7a9;
 $iconC_footer : #989182;
+$iconC_favorite: #eecc67;
 
 
-//************************//
+//*******************8*****//
 //        Transition      //
 //************************//
 $x0: .125s;
@@ -196,3 +202,23 @@ a:focus{outline: none;}
 //************************//
 .hide{ display: none!important; }
 .wrapper{ width:100%; float:left;}
+
+
+//*******************************//
+//   Classes for sport Icons    //
+//*****************************//
+
+.soccer, .tennis, .basketball, .volleyball, .hockey, .baseball, .rugby, .handball, .snooker, .moto, .formula{
+	&:before{content:'';display:block;float:left;width:20px;height:20px; background:url('../img/icons/sports.png') no-repeat 0px 0px;}
+}
+.soccer:before{background-position: 1px 2px;}
+.tennis:before{background-position: 1px -18px;}
+.basketball:before{background-position: 1px -37px;}
+.volleyball:before{background-position: 1px -58px;}
+.hockey:before{background-position: 1px -77px;}
+.baseball:before{background-position: 1px -97px;}
+.rugby:before{background-position: 1px -117px;}
+.handball:before{background-position: 1px -137px;}
+.snooker:before{background-position: 1px -157px;}
+.moto:before{background-position: 1px -177px;}
+.formula:before{background-position: 1px -195px;}

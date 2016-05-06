@@ -6,30 +6,26 @@
 .leftSidebar{min-width:236px;max-width: 236px; flex:1;
   .module{background: transparent;border-bottom: none;
     .module_body{
-      .event{float:left;width:100%;white-space:nowrap;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;border-bottom:1px solid $borderC_module;
-        a, span{color:$txtC_basic;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;float:left}
-        .liveStream{position:relative;left:-5px;color:$iconC_liveStream;font-family:'loungebet_icons';float:left;
-          &:after, &:before{content: '';position:absolute;font-size:16px;}
-          &:after{content:'\38';color:$iconC_liveStream;opacity: .7}
-          &:before{content:'\39';opacity: .3}
-        }
-        .eventTitle{cursor:pointer;position:relative;width:100%;float:left;display:flex;
-          .eventName{padding:0 10px;float:left;max-width:207px;transition:all $x1;}
-          .eventHover{position:relative;float:right;width:0;height:30px;opacity:0;visibility:hidden;display:flex;justify-content:flex-end;transition:width $x2,right $x1;
-            .icon-star{position: absolute;left:25px;height:30px;padding-top:8px;transition:all $x3;}
-            .icon-arrow_down{position:absolute;right:25px;height:30px;width:30px;padding-top:8px;border-left: 1px solid;transition:all $x2;}
+      .event{float:left;width:100%;white-space:nowrap;min-height:30px;line-height:30px;background-color:$bgC_odds;border-radius:4px;margin-bottom:5px;position:relative;border-bottom:1px solid $borderC_module;
+        a, span{color:$txtC_basic;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;display:inline-block;float:left;}
+        .eventTitle{cursor:pointer;position:relative;width:100%;display:flex;
+          .eventName{padding:0 10px;float:left;max-width:100%;transition:all $x2;}
+          .eventHover{position:relative;width:0;height:30px;opacity:0;visibility:hidden;display:flex;justify-content:flex-end;transition:width $x2,right $x1;
+            .icon-star, .icon-arrow_down{position:absolute;height:30px;}
+            .icon-star{left:20px;padding-top:8px;transition:all $x3;}
+            .icon-arrow_down{right:25px;width:30px;padding-top:9px;border-left:1px solid;transition:all $x2;}
           }
-          &.withIcon{
-            .eventName{max-width:200px;}
+          &.iconic{
+            .eventName{max-width:89%;}
             &:hover{
-              .eventName{max-width:168px;}
+              .eventName{max-width:89%;}
+              .eventHover{max-width:29%;}
             }
           }
           &:hover{
-            .eventName{max-width:175px;}
-            .eventHover{width:60px;opacity:1;visibility:visible;
-              &.withIcon{right:-10px;}
-              .icon-star{left:10px;padding-right:7px;opacity:.5;
+            .eventName{max-width:100%;}
+            .eventHover{width:26%;opacity:1;visibility:visible;
+              .icon-star{left:0;opacity:.5;
                 &:hover{opacity: 1;}
               }
               .icon-arrow_down{right:0;padding-left:7px;opacity:.5;
@@ -55,62 +51,112 @@
               }
             }
           }
-          .eventDisable{padding:0 5px;background: rgba(255, 255, 255, 0.4);position:absolute;top:30px;left:0;right:0;bottom:0;z-index:100;
-            span{background:$bgC_goal;line-height:30px;display:block;width:100%;border-radius:6px;border:1px solid $bgC_goal; color:$txtC_mainRed;font-size: 15px;font-weight: 700;text-align:center;}
+          .eventDisable{overflow:hidden;padding:0 5px;background: rgba(255, 255, 255, 0.4);position:absolute;top:30px;left:0;right:0;bottom:0;z-index:100;
+            .goalContainer{text-align:center;background:$bgC_goal;height:31px;border-radius:6px;border:1px solid $bgC_goal;
+              span{color:$txtC_mainRed;font-size: 15px;font-weight:700;display:block;width:100%;}
+            }
           }
         }
         &.opened{
           .eventDetails{height:auto;opacity:1;visibility:visible;}
+          .eventHover{
+            .icon-arrow_down{
+              &:before{}
+            }
+          }
         }
         &.active{
-          .eventTitle{
-            .eventHover{width:60px;opacity:1;visibility:visible;
-              &.withIcon{right:-10px;}
-              .icon-star{left:10px;padding-right:7px;opacity:.5;
+          .eventTitle{background:$bgC_event_active;border-radius:4px 0 0 4px;
+            .eventName{max-width:89%;color:$txtC_menu;}
+            i{color:$txtC_menu;
+              &.liveStream:after{color:$txtC_menu;opacity: .5;}
+            }
+            .eventHover{width:29%;opacity:1;visibility:visible;
+              .icon-star{left:0;opacity:.5;
                 &:hover{opacity: 1;}
               }
               .icon-arrow_down{right:0;padding-left:7px;opacity:.5;
                 &:hover{opacity: 1;}
               }
             }
+            &.iconic{
+              .eventName{max-width:80%;}
+            }
+            &:after{content:'';border-left:10px solid $bgC_event_active;border-top:15px solid transparent;border-bottom:15px solid transparent;position:absolute;}
           }
         }
         &:last-child{margin-bottom: 0;}
       }
     }
+    //styles for separate modules in leftsidebar
+    // module search_collapse
+    &.search_collapse{background:$bgC_base; border-radius:4px;padding:8px 10px;
+      .title{padding: 0;
+        .filter{float:left;margin-bottom:9px;
+          span{line-height:150%;float:left;text-align:center;margin-right: 6px;}
+          //a{opacity:0.5;min-height:21px;margin-right:6px;padding:0 10px;color:$txtC_btn;border-radius:3px;transition:all $x1;
+          //  &.active, &:hover{opacity:1;}
+          //}
+        }
+        .icon-close{float:right;color:$txtC_btn;opacity: 0.5;transition:all $x1;
+          &:before{font-size:20px;}
+          &:hover{opacity:1;}
+        }
+      }
+      .search{position:relative;clear:both;
+        input{width:100%;padding:8px 10px 8px 30px;border-radius:3px;border:none;line-height:100%;
+          &:focus+button{opacity: 1;}
+        }
+        button{border:none;background:transparent;position:absolute;top:4px;left:0;padding:0;z-index:2;opacity:0.3;transition:all $x1;
+          &:before{padding:3px;color:$txtC_basic;font-size:22px;}
+        }
+      }
+    }
+    &.sportListItem{float:left; width:100%;
+      .header{position:relative;background-color:$bgC_moduleTab;color:$txtC_basic;
+        .sportHover{z-index:0;display:block;position:absolute;top:0;bottom:0;right:98.3%;left:0;transition:all $x2;}
+        .sportName{z-index:1; position: relative;}
+        &:hover{color:$txtC_menu;
+          .sportHover{right:0;}
+          &:after{content:"\31";color:$txtC_menu;}
+        }
+        &:after{color:$iconC_iconArrowDown;transition:all $x2;}
+      }
+      &.opened{
+        .header{color:$txtC_menu;
+          .sportHover{right:0;}
+          &:after{content:"\7a";color:$txtC_menu;}
+        }
+      }
+    }
+    &.favorite{
+      .header:before{content:"\32";font-family:"loungebet_icons";margin-top:7px;margin-right: 7px;color:$iconC_favorite;}
+      .eventHover{
+        .icon-star:before{color:$iconC_favorite;}
+      }
+    }
   }
 }
-//styles for separate modules in leftsidebar
-.search{}
-.sportListItem{float:left; width:100%;
-  .header{position:relative;background-color:$bgC_moduleTab;color:$txtC_basic;
-    .sportHover{z-index:0;display:block;position:absolute;top:0;bottom:0;right:98.3%;left:0;transition:all $x2 $x0;}
-    .sportName{z-index:1; position: relative;}
-    &:hover{color:$txtC_menu;
-      .sportHover{right:0;}
-      &:after{content:"\31";color:$txtC_menu;}
-    }
-    &:before{content:"";font-family:'loungebet_icons'; }
-    &:after{content:"\31";color:$iconC_iconArrowDown;font-family:'loungebet_icons';transition:all $x3 $x0;}
-  }
-  &.opened{
-    .header{color:$txtC_menu;
-      .sportHover{right:0;}
-      &:after{content:"\7a";color:$txtC_menu;}
-    }
-  }
+.liveStream{position:relative;left:-8px;color:$iconC_liveStream;width:20px;opacity:0.5;font-family:'loungebet_icons';transition:all $x1;
+  &:after, &:before{content: '';position:absolute;font-size:16px;}
+  &:after{content:"\38";color:$iconC_liveStream;opacity: .7}
+  &:before{content:"\39";opacity: .3}
+  &:hover{opacity: 1;}
 }
-
-.soccer{
+.soccerSport{
   .header{
     .sportHover{background-color:$spC_soccer;}
-    &:before {content: "\73";}
+    &.soccer:before{margin-top:7px;margin-right:7px;position:relative;z-index:2;}
   }
 }
-.tennis{
+.tennisSport{
   .header{
     .sportHover{background-color:$spC_tennis;}
-    &:before {content: "\75";}
+    &.tennis:before{margin-top:7px;margin-right:7px;position:relative;z-index:2;}
   }
 }
+.dropdownContainer {
+  float: right;
+}
+@include dropdown(200px, false, 0 10px);
 
