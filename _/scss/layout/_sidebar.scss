@@ -121,12 +121,15 @@
           &:after{content:"\31";color:$txtC_menu;}
         }
         &:after{color:$iconC_iconArrowDown;transition:all $x2;}
+        &:before{margin-top:7px;margin-right:7px;position:relative;z-index:2;}
       }
+      .module_body{display: none;}
       &.opened{
         .header{color:$txtC_menu;
           .sportHover{right:0;}
           &:after{content:"\7a";color:$txtC_menu;}
         }
+        .module_body{display: block;}
       }
     }
     &.favorite{
@@ -135,6 +138,14 @@
         .icon-star:before{color:$iconC_favorite;}
       }
     }
+  }
+  //Collapsed left Sidebar styles
+  &.collapsed{min-width: 40px;max-width: 40px;
+    .filter, input, .module .module_body, .header .sportName{display: none;}
+    .header{text-indent:-99999999;
+      &:after{content: ''};
+    }
+
   }
 }
 .liveStream{position:relative;left:-8px;color:$iconC_liveStream;width:20px;opacity:0.5;font-family:'loungebet_icons';transition:all $x1;
@@ -146,14 +157,17 @@
 .soccerSport{
   .header{
     .sportHover{background-color:$spC_soccer;}
-    &.soccer:before{margin-top:7px;margin-right:7px;position:relative;z-index:2;}
   }
 }
 .tennisSport{
   .header{
     .sportHover{background-color:$spC_tennis;}
-    &.tennis:before{margin-top:7px;margin-right:7px;position:relative;z-index:2;}
-  }
+    }
+}
+.baseballSport{
+  .header{
+    .sportHover{background-color:$spC_baseball;}
+    }
 }
 .event_title{
   .dropdownContainer{width:255px;float: right;@include scrollbars(9px, $bgC_scrollbar);
