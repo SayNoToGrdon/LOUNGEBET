@@ -156,10 +156,11 @@
   }
 }
 .event_title{
-  .dropdownContainer{float: right;
+  .dropdownContainer{width:255px;float: right;@include scrollbars(9px, $bgC_scrollbar);
     .dropdownOpener{display:block;}
   }
 }
-  @include dropdown(100px, false, 0 10px, 255px);
 
+
+@include dropdown(false, 8px, 0 10px, 255px, false, auto);
 
