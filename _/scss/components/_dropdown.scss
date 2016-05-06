@@ -1,15 +1,57 @@
-.dropdownContainer{width: 255px;background: transparent;position: relative;
-
-}
-@mixin dropdown($left, $right, $padding) {
-    .dropdown {width: 100%;position: absolute;top:calc(100% + 5px);background:$bgC_dropdown;border-radius: 4px;border: 1px solid $borderC_dropdown;
-      ul{width: 97.5%;overflow-y:auto;max-height:140px;
-        li{box-shadow:1px 1px 1px $borderC_dropdown;margin-right:1px;margin-bottom:1px;
-          a, span{display:inline-block;color:$txtC_basic;line-height:200%;font-size:11px;font-weight:500;padding:$padding}
+@mixin dropdown($left, $right, $padding, $width) {
+  .dropdownContainer {
+    width: $width; background: transparent; position: relative;
+    .dropdown {width: 100%;position: absolute;top:35px;background: $bgC_dropdown;border-radius: 4px;border: 1px solid $borderC_dropdown;
+      ul {
+        width: 97.5%;
+        overflow-y: auto;
+        max-height: 140px;
+        li {
+          box-shadow: 1px 1px 1px $borderC_dropdown;
+          margin-right: 1px;
+          margin-bottom: 1px;
+          a, span {
+            display: inline-block;
+            color: $txtC_basic;
+            line-height: 200%;
+            font-size: 11px;
+            font-weight: 500;
+            padding: $padding
+          }
         }
       }
-      &:before, &:after{content: '';position: absolute;}
-      &:before {border-bottom:7px solid $bgC_dropdown;border-left:8px solid transparent;border-right:8px solid transparent;right:if($right==false, auto, $right);left:if($left==false, auto, $left);top:-7px;z-index: 2}
-      &:after {border-bottom:9px solid $borderC_dropdown;border-left:10px solid transparent;border-right:10px solid transparent;right:if($right==false, auto, #{$right*1-2});left:if($left==false, auto, #{$left*1-2});top:-9px;z-index: 1}
+      &:before, &:after {
+        content: '';
+        position: absolute;
+      }
+      &:before {
+        border-bottom: 7px solid $bgC_dropdown;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        right: $right;
+        left: $left;
+        top: -7px;
+        z-index: 2
+      }
+      &:after {
+        border-bottom: 9px solid $borderC_dropdown;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        top: -9px;
+        z-index: 1
+      }
+      @if($right == $left){
+        &:after {
+          right: $right;
+          left: $left;
+        }
+
+      }@else{
+        &:after {
+          right: if($right==false, auto, #{$right*1-2});
+          left: if($left==false, auto, #{$left*1-2});
+        }
+      }
     }
   }
+}
